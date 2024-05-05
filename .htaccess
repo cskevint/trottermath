@@ -1,1 +1,4 @@
 Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTP_HOST}  !^www\.trottermath\.net$ [NC]
+RewriteRule ^(.*) https://www.trottermath.net/$1 [L,R]
