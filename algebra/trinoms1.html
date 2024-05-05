@@ -1,0 +1,243 @@
+<HTML>
+<HEAD><TITLE>Factoring Trinomials 1</TITLE></HEAD>
+
+<meta name="AUTHOR" content= "Jeff LeMieux, Oak Harbor 2001">
+<script language="javascript">
+
+function doit(){
+	a=document.factors.num.value;    //number to be evaluated
+	checker=Math.sqrt(a);    //maximum divisor
+	output="";
+
+	for (x=1; x<=checker; x++)
+	{
+		c=a/x;
+		d=Math.floor(c);
+// compare integer answer and division answer
+     if(c==d){
+     output = output + "factor pair = " +  x +  "," +  c  + "\n";
+		}
+	}
+document.factors.worksp.value=output;
+}
+</script></head>
+
+
+<a name="Top">
+<BODY bgcolor="#FFFFE0">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+
+<TD WIDTH=60%><CENTER><B><font face="arial" size=6><center>The Full Story<br><font size=3>of</font><br><font size=7>x<sup>2</sup> + bx + c</font></center></font></B></CENTER></TD>
+<TD WIDTH=40% align=center><img src="hwkhelp.gif" width=150 height=100></TD>
+</TR>
+</TABLE>
+<hr size=3 noshade>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factoring trinomials of the form <b>x<sup>2</sup> + bx + c</b> is often perceived by many students of a first year course in Algebra as a grand mystery and a topic that leads to much frustration, if I may judge from my teaching experience and comments recently received from students in an on-line math help service.  So this page is being prepared to provide
+some help in this topic.  It is not what I would call a typical "Trotter
+Math" theme, but it is one I like to teach, and therefore like to give
+my own special flavor to it.  With those thoughts in mind, I will proceed
+with what I call the "full story" of this portion of traditional school
+math lessons.  I trust it will help those readers who are having difficulty in this area.
+<p>
+<center><img src="wavyline.gif"></center>
+<p>
+<h3>Background</h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First of all, one must realize what the word factoring really means.  If I give you two numbers (5 and 7) in an elementary math class and say, "Multiply them.", you would not hestitate too much and think, "5 times 7 is 35."  You would write very quickly "5 × 7 = 35".
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But if I said, "Factor 35.", you might think just a bit longer before replying, "35 is 5 times 7."  It is sort of like the famous TV show called JEOPARDY!, where the "answer" is stated by the moderator, and the "question" is stated by the contestant.  Things are merely reversed here.  Likewise, "to multiply" and "to factor" are reverse concepts.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the same is true in algebra.  The only difference is that the things we multiply and factor are a bit more complicated.  Here we are called to deal with things called binomials and trinomials.  An algebraic binomial is an expression made up of two terms ["bi" meaning "two", as in "bicycle"].  So you might figure that a trinomial has three terms ["tri" meaning "three"].
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are some typical examples of these items:
+<p><pre>
+		BINOMIALS		TRINOMIALS
+
+		  x + 3			x<sup>2</sup> + 4x + 3
+		  x - 4			x<sup>2</sup> - 6x + 9
+		  x + 2			x<sup>2</sup> + 7x - 8
+</pre><p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<h3>Multiplying Binomials</h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It has long been my belief that much of the trouble arising in the factoring of trinomials into a pair of binomials stems from an unclear understanding of the patterns that are found when multiplying
+two binomials in the first place.  In earlier lessons of an Algebra course, students are asked to multiply binomials as homework exercises; then in later lessons they have to factor trinomials that were products of that earlier type of multiplication practice.  And they view the two actions as somewhat unrelated.  And that unfortunately is where the anxiety begins.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I well recall that when I first learned about multiplying binomials, we did it in a traditional vertical format, very similar to what I had learned in my arithmetic classes in grade school. Notice:
+<p><pre>
+		ARITHMETIC		ALGEBRA
+
+		   23			x + 3
+		 <u>× 27</u>			<u>x + 7</u>
+		  161			x<sup>2</sup> + 3x
+		 <u> 46 </u>			<u>     7x  + 21</u>
+		` 621			x<sup>2</sup> + 10x + 21
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sure, there are some differences, but there are some similarities.  The arithmetic goes right-to-left, and the algebra goes the other way.  But they both have two sub-products which are finally added.  The
+"cross-multiplying" steps that one does in arithmetic [the "7 × 20" and the "20 × 3"] are also done in algebra [the "x × 3" and the "7 × x"].  And what many don't realize is the arithmetic example could be done in algebraic style.  Watch.
+<p><pre>
+			Algebraic-Arithmetic
+
+			  20 + 3
+			<u>x 20 + 7</u>
+			 400 +  60
+			 <u>      140 + 21</u>
+			 400 + 200 + 21 = 621
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See?  There is a link between the two levels of math here.  Even 23 and 27 could be considered as binomials: 20 + 3 and 20 + 7.  So it's just a matter of a wolf dressed up in sheep's clothing.
+<p>
+<center><hr width=50% size=3></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now let's get down to the real nitty-gritty of multiplying algebraic binomials.  We really only have 4 cases to consider:
+<p><pre>
+	a) (x + a)(x + b)  <-- where both signs are "+"
+	b) (x - c)(x - d)  <-- where both signs are "-"
+	c) (x + e)(x - f)  <-- where e > f, but one sign of each
+	d) (x + g)(x - h)  <-- where g < h, but one sign of each
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's look at some numerical cases now.
+<p><pre>
+			x <font color="FF0000">+</font> 5		x <font color="0000FF">-</font> 9
+			<u>x <font color="FF0000">+</font> 4</u>		<u>x <font color="0000FF">-</font> 2</u>
+			x<sup>2</sup> + 5x		x<sup>2</sup> -  9x
+			<u>     4x + 20</u>	<u>   -  2x + 18</u>
+			x<sup>2</sup> <font color="FF0000">+</font> 9x <font color="FF0000">+</font> 20    x<sup>2</sup> <font color="0000FF">-</font> 11x <font color="FF0000">+</font> 18
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perhaps the most important pattern to be gained from these two examples that will help us in our future work in factoring trinomials concerns the signs in the products.  Notice that both have a "<font color="FF0000">+</font>" in front of the third term (numbers 20 and 18).  This is due of course to the basic property of muliplying "signed numbers" (integers): <font color="FF0000">like signs give a positive product</font>.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, the signs of the middle terms matches the signs used in the binomials themselves: "<font color="FF0000">+</font>" with the "<font color="FF0000">sum binomials</font>" and "<font color="0000FF">-</font>" with the "<font color="0000FF">difference binomials</font>".  This should be fairly obvious to most.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, the specific numbers: in the first case, 20 is the product of 4 and 5, whereas 9 is the sum of 4 and 5.  It's actually
+the same for the second case; 18 is the product of 2 and 9, whereas 11 is the sum of 2 and 9.
+<p>
+<center><hr width=50% size=3></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, the two other cases:
+<p><pre>
+			x <font color="FF0000">+</font> 5		x <font color="0000FF">-</font> 8
+			<u>x <font color="0000FF">-</font> 2</u>		<u>x <font color="FF0000">+</font> 3</u>
+			x<sup>2</sup> + 5x		x<sup>2</sup> - 8x
+			<u>   - 2x - 10</u>	<u>    3x - 24</u>
+			x<sup>2</sup> <font color="FF0000">+</font> 3x <font color="0000FF">-</font> 10    x<sup>2</sup> <font color="0000FF">-</font> 5x <font color="0000FF">-</font> 24
+<p></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once again, let's look for patterns in the signs.  First we see that the signs in front of the 3rd terms are "<font color="0000FF">-</font>".  That's due to the other property of multiplying signed numers: <font color="0000FF">unlike signs give a negative product</font>. ["+5 x -2 = -10" and "-8 x +3 = -24"]
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regarding the signs of the middle terms, we have one of each.  Where's the help there?  Well, notice the sign of the "larger factor number" in each case -- +5 and -8.  Those signs were just the ones used
+for the middle term.  This is due to the rule for adding two integers with unlike signs: subtract the absolute values and apply the sign of the "larger" number.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So summarizing these two cases briefly: when the binomials consist of a "sum" and a "difference", the product will consist of a
+negative 3rd term and a middle term with a sign that corresponds to the
+"larger factor number"; and the numerical part of that middle term will be the "difference" of the two involved numbers.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(I hope this isn't confusing you.  You just need to do several practice exercises for awhile in order to feel comfortable with it.  This is the necessary "drill" so often despised by many students.  But sometimes "ya' just gotta buckle down and grind it out.") 
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<h3>Factoring Trinomials</h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's see if we can now apply the above information to the main reason for me writing this page in the first place.  We'll begin with the easiest case: (a).
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Factor x<sup>2</sup> <font color="FF0000">+</font> 14x <font color="FF0000">+</font> 24</b>.  From our experience above, we know our binomial factors should look like 
+<p>
+<center>(x <font color="FF0000">+</font> __ )(x <font color="FF0000">+</font> __ )</center>
+<p>
+because the sign of the 3rd term is "+", as well as the middle term.
+The trouble that 24 has many factor pairs to consider.  (Well, not
+really THAT many, I know; but other numbers do have many more.)  And
+you need that specific pair that has a sum of 14.  In any case, until
+you can do these things "in your head", I recommend you write out a
+little factor T-chart, like this:
+<p><pre>
+				    24
+				----|-----
+				  1 | 24
+				  <font color="#FF00FF">2</font> | <font color="#FF00FF">12</font>
+				  3 |  8
+				  4 |  6 
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now inspect the chart carefully to lcate a pair that has the sum of 14.  There it is, in color, <font color="#FF00FF">2</font> and <font color="#FF00FF">12</font>.  So our task is done:
+<p><pre>
+<center><b><font size=4>(x <font color="FF0000">+</font> <font color="#FF00FF">2</font>)(x <font color="FF0000">+</font> <font color="#FF00FF">12</font>).</font></b></center>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If our problem had simply been x<sup>2</sup> <font color="0000FF">-</font> 14x <font color="FF0000">+</font> 24, not too much would have changed in our work.  So I will only give the final result here: (x <font color="0000FF">-</font> <font color="#FF00FF">2</font>)(x <font color="0000FF">-</font> <font color="#FF00FF">12</font>).
+<p>
+<center><hr size=3 width=50%></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The final two cases work pretty much the same way; the differences are pretty much what you would expect.  Especially if you understood well the multiplication part above.  Here's a good case:
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Factor x<sup>2</sup> <font color="FF0000">+</font> 7x <font color="0000FF">-</font> 30</b>.  Here due to the sign of the 3rd term being negative, we know our factors set up like this:
+<p>
+<center>
+(x <font color="FF0000">+</font>  )(x <font color="0000FF">-</font> __ );
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or, if you wish, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x <font color="0000FF">-</font>  )(x <font color="FF0000">+</font> __ ).</center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But now we need a factor pair of 30 that has a difference of 7.  Construct a factor T-chart for 30.
+<p><pre>
+				    30
+				----|-----
+				  1 | 30
+				  2 | 15
+				  <font color="#FF00FF">3</font> | <font color="#FF00FF">10</font>
+				  5 |  6 
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The highlighted pair does the job, leaving us with one last decision: where to place the 3 and the 10 (because the signs are different in our parentheses).  But recall the middle term was <font color="FF0000">positive</font>, so it must have resulted from adding +10 and -3.  That's it then. Put the 10 in the "<font color="FF0000">sum binomial</font>" and the 3 in the "<font color="0000FF">difference binomial</font>.
+<pre><p>
+<center><b><font size=4>(x <font color="0000FF">-</font> <font color="#FF00FF">3</font>)(x <font color="FF0000">+</font> <font color="#FF00FF">10</font>)</font></b></center>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A similar line of reasoning would be necessary if our trinomial were <b>x<sup>2</sup> <font color="0000FF">-</font> 13x <font color="0000FF">-</font> 30</b>.  This time we need a factor pair for 30 with a
+difference of 13.  Consulting our chart gives us the pair of <font color="#FF00FF">2</font> and <font color="#FF00FF">15</font>.  Since our middle term is <font color="0000FF">negative</font>, it must have resulted from adding -15 and +2, we will place the larger number factor in the <font color="0000FF">difference binomial</font>.
+<p><pre>
+<center><b><font size=4>(x <font color="0000FF">-</font> <font color="#FF00FF">15</font>)(x <font color="FF0000">+</font> <font color="#FF00FF">2</font>)</font></b></center>
+</pre>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+
+<h4>Closing Comments</h4>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That pretty well covers the story.  But I'd like to add two pieces of advice.  First, always double check your work multiplying
+out the two factors you've formed.  It's easy to make a goof in this work.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second, become proficient at making those factor T-charts with all the possible factor pairs that a number might have.  I have seen situations when a student made an incomplete chart, leaving out a certain
+pair, and THAT WAS THE PAIR NEEDED TO DO THE JOB!  
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, on occasion, some trinomials are presented that are NOT factorable.  For instance, if we had <b>x<sup>2</sup> + 9x + 24</b> or <b>x<sup>2</sup> + 10x - 30</b>, because our charts are complete and correct, we know there is no factor pair of 24 with a sum of 9, and likewise there is no factor pair of 30 with a difference of 10.  Hence, these trinomials are not factorable using integers and are therefore called (what else?) <b>prime</b> trinomials.
+<p>
+<hr noshade>
+<p>
+<h3>Update (Feb 2002)</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a javascript program that will give you the factor pairs necessary to factor trinomials.  Thanks to Jeff LeMieux, of Oak Harbor, Washington.
+<p>
+
+<center>
+<form name=factors>
+<table width="50%" border="0">
+<tr><td  align="center">
+<font size="+2"><font color=#800000>Check a number for factor pairs:</font></font>
+<font size="+1">Enter the number to be evaluated:</font>
+<input type="text" name="num" size="7"  value="">&nbsp;&nbsp;
+<input type="button"  onclick=doit() value="Find Factor Pairs">
+</td></tr>
+<tr><td align="center">
+<textarea name=worksp cols=40 rows=10 value=""></textarea><br>
+<INPUT TYPE="RESET" VALUE="Reset"><br>
+<div align="right"><font size="-2">&copy;Jeff LeMieux 9/2001</font></div>
+</td></tr>
+</form>
+</center>
+<p>
+<hr noshaded>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

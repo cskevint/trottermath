@@ -1,0 +1,737 @@
+<HTML>
+
+<HEAD><TITLE>Ulam-421</TITLE></HEAD>
+
+<BODY bgcolor="#C0C0C0">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+
+<TD WIDTH=15% align=center><img src="frac9.gif"></TD>
+
+<TD WIDTH=70%><CENTER><font face="comic sans ms" size=7><B>ULAM-421</B></font></CENTER></TD>
+
+<TD WIDTH=15% align=center><img src="frac9.gif"></TD>
+</TR>
+</TABLE>
+
+<hr noshade>
+<p>
+     Stanislav Ulam was a famous and influential mathematician of the 20th century.  Among other things, he even was a member of the team of scientists who developed the atomic bomb during the days of World War II.  But like many mathematicians, he had a fascination for the simplest of things: whole numbers and basic operations.  He is credited for devising the little numerical activity to be described below, something so easy that it is within the scope of understanding of most any elementary school student. 
+<p>
+<hr noshade width=50%>
+<pre>
+
+	The rules of this activity are as follows:
+
+   1.	Select any whole number.
+
+   2.	a) If the number is <b>even</b>, divide it by 2.
+
+    	b) It it is <b>odd</b>, multiply it by 3, then add 1.
+
+   3.	Continue Step 2 with each result, building a sequence of numbers, until...
+
+	well, that's what you are supposed to discover!  When
+	you get to the surprise, you'll know.  (Don't read ahead
+	on this page, if you want to get the maximum enjoyment
+	from the activity.)
+
+	So, try it.  Do the process many times before reading on.  I 
+    guarantee that the effort will be worth it.
+
+</pre>
+
+<hr noshade>
+
+<p>
+
+<h2>The Surprise</h2>
+
+
+
+     Well, did you follow my advice?  Did you try the Ulam process several times with different numbers, large and small?  If so, you
+
+should have discovered that sooner or later you arrived at the number
+
+<font color="#FF0000">4</font>, which gave you <font color="#0000FF">2</font> [Rule 2a], which in turn gave you <font color="#00FF00">1</font> [Rule 2a], and
+
+then got a <font color="#FF0000">4</font> again [Rule 2b]!  Did that surprise you? It should have, because now you are locked into a "vicious circle", with no escape.
+
+<p>
+
+<center><img src="3balls.gif"></center>
+
+<p>
+
+     And what makes this even more surprising is that, as far as we know, all numbers always arrive to the <font color="#FF0000">4</font>-<font color="#0000FF">2</font>-<font color="#00FF00">1</font> loop, or cycle.  No matter what you choose.  Some just take longer to get there than others, that's all.
+
+<p>
+
+     So if all numbers do the same thing, what can we do in the math classroom to make this into a true learning activity?  My advice
+
+is to ask some questions like:
+
+<p>
+
+<ul>
+
+<li>Which number less than or equal to 100 produces the longest string of numbers necessary to arrive at the <font color="#FF0000">4</font>-<font color="#0000FF">2</font>-<font color="#00FF00">1</font> cycle?</li><br><br>
+
+
+
+<li>Which numbers less than or equal to 100 require the same number of steps to arrive at the cycle?</li><br><br>
+
+</ul>
+
+<p>
+
+     Don't let those questions scare you into thinking that there is a lot of work involved to obtain the answers.  It is because as you are working with one number, you often will obtain other numbers in the 1-to-100 range as part of your sequence.  Let me explain with an example.
+
+<p>
+
+          Choose 28 to start with.  The sequence begins:
+
+<p>
+
+<center>28 ==> 14 ==> 7 ==> 22 ==> 11  ==> 34  (etc.)</center>
+
+<p>
+
+So while you are working on the number of steps for "28", automatically
+
+you obtain data for the other numbers.  See?  It's not so bad after all.
+
+<p>
+
+<hr noshade width=50%>
+
+<p>
+
+     Now, to make our work a little more organized and formal, we might apply the function concept from higher math and define a "number of steps required" function in the following manner:
+
+<p>
+
+     Let <b><i>U(n)</i></b> be the number of steps required for a number to arrive at the <font color="#FF0000">4</font>, the "entry point" for the cycle in this game (a fact that is not so in other games like this one, as you'll soon see later).  This notation is read, as all algebra students soon learn, "U of n".  Some examples will show how this works.
+
+<p><pre>
+
+	U(20) = 5, because
+
+
+
+		    1      2     3      4     5
+
+		20 ==> 10 ==> 5 ==> 16 ==> 8 ==> <font color="#FF0000">4</font> 
+
+
+
+	U(26) = 8, because
+
+
+
+	      1      2      3      4      5     6      7     8	
+
+	  26 ==> 13 ==> 40 ==> 20 ==> 10 ==> 5 ==> 16 ==> 8 ==> <font color="#FF0000">4</font>
+
+</pre>
+
+<p>
+
+     And those two examples suffice to once again emphasize that finding the number of steps for one number also produces data for other numbers at the same time, because the sequence for "20" was a part of
+
+the sequence for "26".
+
+<p>
+
+<hr noshade width=50%>
+
+<p>
+
+     Perhaps it is now time to show the U(n) values for all the numbers less than or equal to 100.  Observe the chart below:
+
+</pre>
+
+<center>
+
+<table Border=2 cellpadding=10>
+
+<tr>
+
+<td width=100% bgcolor="#FFFFFF"><b><font face="arial">U(n) Values for the Numbers 1 - 100</font></b></td>
+
+</tr>
+
+</table>
+
+
+
+<table Border=2 cellpadding=10>
+
+
+
+<tr align=center bgcolor="#8080C0">
+
+<td width=10%><b>n</b></td><td width=10% bgcolor="#CCCC00"><b>U(n)</b></td>
+
+<td width=10%><b>n</b></td><td width=10% bgcolor="#CCCC00"><b>U(n)</b></td>
+
+<td width=10%><b>n</b></td><td width=10% bgcolor="#CCCC00"><b>U(n)</b></td>
+
+<td width=10%><b>n</b></td><td width=10% bgcolor="#CCCC00"><b>U(n)</b></td>
+
+<td width=10%><b>n</b></td><td width=10% bgcolor="#CCCC00"><b>U(n)</b></td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>1</td><td bgcolor="#8080C0">loop</td>
+
+<td>21</td><td bgcolor="#8080C0">5</td>
+
+<td>41</td><td bgcolor="#8080C0">107</td>
+
+<td>61</td><td bgcolor="#8080C0">17</td>
+
+<td>81</td><td bgcolor="#8080C0">20</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>2</td><td bgcolor="#8080C0">loop</td>
+
+<td>22</td><td bgcolor="#8080C0">13</td>
+
+<td>42</td><td bgcolor="#8080C0">6</td>
+
+<td>62</td><td bgcolor="#8080C0">105</td>
+
+<td>82</td><td bgcolor="#8080C0">108</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>3</td><td bgcolor="#8080C0">5</td>
+
+<td>23</td><td bgcolor="#8080C0">13</td>
+
+<td>43</td><td bgcolor="#8080C0">27</td>
+
+<td>63</td><td bgcolor="#8080C0">105</td>
+
+<td>83</td><td bgcolor="#8080C0">108</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>4</td><td bgcolor="#8080C0">loop</td>
+
+<td>24</td><td bgcolor="#8080C0">8</td>
+
+<td>44</td><td bgcolor="#8080C0">14</td>
+
+<td>64</td><td bgcolor="#8080C0">4</td>
+
+<td>84</td><td bgcolor="#8080C0">7</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>5</td><td bgcolor="#8080C0">3</td>
+
+<td>25</td><td bgcolor="#8080C0">21</td>
+
+<td>45</td><td bgcolor="#8080C0">14</td>
+
+<td>65</td><td bgcolor="#8080C0">25</td>
+
+<td>85</td><td bgcolor="#8080C0">7</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>6</td><td bgcolor="#8080C0">6</td>
+
+<td>26</td><td bgcolor="#8080C0">8</td>
+
+<td>46</td><td bgcolor="#8080C0">14</td>
+
+<td>66</td><td bgcolor="#8080C0">25</td>
+
+<td>86</td><td bgcolor="#8080C0">28</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>7</td><td bgcolor="#8080C0">14</td>
+
+<td>27</td><td bgcolor="#8080C0">109</td>
+
+<td>47</td><td bgcolor="#8080C0">102</td>
+
+<td>67</td><td bgcolor="#8080C0">25</td>
+
+<td>87</td><td bgcolor="#8080C0">28</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>8</td><td bgcolor="#8080C0">1</td>
+
+<td>28</td><td bgcolor="#8080C0">16</td>
+
+<td>48</td><td bgcolor="#8080C0">9</td>
+
+<td>68</td><td bgcolor="#8080C0">12</td>
+
+<td>88</td><td bgcolor="#8080C0">15</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>9</td><td bgcolor="#8080C0">17</td>
+
+<td>29</td><td bgcolor="#8080C0">16</td>
+
+<td>49</td><td bgcolor="#8080C0">22</td>
+
+<td>69</td><td bgcolor="#8080C0">12</td>
+
+<td>89</td><td bgcolor="#8080C0">28</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>10</td><td bgcolor="#8080C0">14</td>
+
+<td>30</td><td bgcolor="#8080C0">16</td>
+
+<td>50</td><td bgcolor="#8080C0">22</td>
+
+<td>70</td><td bgcolor="#8080C0">12</td>
+
+<td>90</td><td bgcolor="#8080C0">15</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>11</td><td bgcolor="#8080C0">12</td>
+
+<td>31</td><td bgcolor="#8080C0">104</td>
+
+<td>51</td><td bgcolor="#8080C0">22</td>
+
+<td>71</td><td bgcolor="#8080C0">100</td>
+
+<td>91</td><td bgcolor="#8080C0">90</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>12</td><td bgcolor="#8080C0">7</td>
+
+<td>32</td><td bgcolor="#8080C0">3</td>
+
+<td>52</td><td bgcolor="#8080C0">9</td>
+
+<td>72</td><td bgcolor="#8080C0">20</td>
+
+<td>92</td><td bgcolor="#8080C0">15</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>13</td><td bgcolor="#8080C0">7</td>
+
+<td>33</td><td bgcolor="#8080C0">24</td>
+
+<td>53</td><td bgcolor="#8080C0">9</td>
+
+<td>73</td><td bgcolor="#8080C0">113</td>
+
+<td>93</td><td bgcolor="#8080C0">15</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>14</td><td bgcolor="#8080C0">15</td>
+
+<td>34</td><td bgcolor="#8080C0">11</td>
+
+<td>54</td><td bgcolor="#8080C0">110</td>
+
+<td>74</td><td bgcolor="#8080C0">20</td>
+
+<td>94</td><td bgcolor="#8080C0">103</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>15</td><td bgcolor="#8080C0">15</td>
+
+<td>35</td><td bgcolor="#8080C0">11</td>
+
+<td>55</td><td bgcolor="#8080C0">110</td>
+
+<td>75</td><td bgcolor="#8080C0">12</td>
+
+<td>95</td><td bgcolor="#8080C0">103</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>16</td><td bgcolor="#8080C0">2</td>
+
+<td>36</td><td bgcolor="#8080C0">19</td>
+
+<td>56</td><td bgcolor="#8080C0">17</td>
+
+<td>76</td><td bgcolor="#8080C0">20</td>
+
+<td>96</td><td bgcolor="#8080C0">10</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>17</td><td bgcolor="#8080C0">10</td>
+
+<td>37</td><td bgcolor="#8080C0">19</td>
+
+<td>57</td><td bgcolor="#8080C0">30</td>
+
+<td>77</td><td bgcolor="#8080C0">20</td>
+
+<td>97</td><td bgcolor="#8080C0">116</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>18</td><td bgcolor="#8080C0">18</td>
+
+<td>38</td><td bgcolor="#8080C0">19</td>
+
+<td>58</td><td bgcolor="#8080C0">17</td>
+
+<td>78</td><td bgcolor="#8080C0">33</td>
+
+<td>98</td><td bgcolor="#8080C0">23</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>19</td><td bgcolor="#8080C0">18</td>
+
+<td>39</td><td bgcolor="#8080C0">32</td>
+
+<td>59</td><td bgcolor="#8080C0">30</td>
+
+<td>79</td><td bgcolor="#8080C0">33</td>
+
+<td>99</td><td bgcolor="#8080C0">23</td>
+
+</tr>
+
+
+
+<tr align=center bgcolor="#CCCC00">
+
+<td>20</td><td bgcolor="#8080C0">5</td>
+
+<td>40</td><td bgcolor="#8080C0">6</td>
+
+<td>60</td><td bgcolor="#8080C0">17</td>
+
+<td>80</td><td bgcolor="#8080C0">7</td>
+
+<td>100</td><td bgcolor="#8080C0">23</td>
+
+</tr>
+
+
+
+
+
+</table>
+
+</center>
+
+<p>
+
+     At this time it would be a good idea to investigate some of the interesting patterns that are present in this table.
+
+<pre><p>
+
+   1.	U(n) = n		This is true for n = 6, 15, and 18
+
+
+
+   2.	U(n) = U(n+1)		This is true many times.
+
+
+
+   3.	U(n) = U(n+1) = U(n+2)  Find the cases for this one.
+
+
+
+   4.	U(n) = U(n+2)		For example, n = 24.
+
+
+
+   5.	U(n) = U(n+2) = U(n+4)	This is true for n = 72.
+
+</pre>
+
+<p>
+
+     Items #2-#5 are actually the answers to Question <B>b</B> that was asked earlier.  And Question <B>a</B> is answered now: 97 needs 116 steps, that is, U(97) = 116. [A nice challenge is to actually produce that monster string of numbers, a task made easier by using a calculator.]
+
+<p>
+
+     By way of practicing the use of inequality symbols we can now efficiently ask these questions, using the chart, of course:
+
+<p>
+
+<center>How many times is U(n) < n?</center>
+
+<p>
+
+<center>How many times is U(n) > n?</center>
+
+<p>
+
+<hr noshade>
+
+
+
+<center><B><h2>Son of Ulam</h2></B></center>
+
+<p>
+
+     Perhaps you think we have pretty much exhausted the topic of Ulam's game by now.  Well, not so.  There is more, much more.  For
+
+example, what if we return to the original rules and make one small change in them?  Let's <b><I>subtract 1</I></B> in Step 2b, instead of add 1.  What
+
+effect might that have?  As before, try it before you read on.  (Please.)
+
+<p>
+
+<hr noshade>
+
+<p>
+
+The solutions:
+
+<p>
+
+     Did you notice I said solution<u>s</u> this time?  That's because there are <u>three</u> types of outcomes this time.  And if you did not do enough research, you might have missed one or two of them.  You see, you must be careful in this sort of investigation.
+
+<p>
+
+     So what are those solutions?
+
+<p><pre>
+
+   1.	Some numbers arrive at a very small loop: 2-1.  In fact, I
+
+	don't like to call this result a loop at all.  Rather, a more
+
+	descriptive name might be a "flip-flop".
+
+
+
+   2.	A 5-term loop is produced by many other numbers; it is
+
+
+
+	5 ==> 14 ==> 7 ==> 20 ==> 10 ==> [5].
+
+
+
+   3.	But a much larger loop of 18 terms is also obtained; it is
+
+
+
+	17 ==> 50 ==> 25 ==> 74 ==> 37 ==> 110 ==> 55 ==> 164 ==> 82
+
+
+
+	   ==>41 ==> 122 ==> 61 ==> 182 ===> 91 ==> 272 ==> 136 ==> 68
+
+
+
+	   ==> 34 ==> [17]
+
+</pre>
+
+<p>
+
+     It is believed by this writer that, like the first Ulam game, all numbers eventually flow into these three patterns, and only these three patterns, sooner or later in this second version.  If anybody can prove this to the contrary, please let me know.
+
+<p>
+
+<hr noshade>
+
+<p>
+
+<h3>Postscript (6/11/99):</h3>
+
+
+
+     I have found a website that gives more information about this famous problem.  It can be found <a href="http://www.cecm.sfu.ca/organics/papers/lagarias/">here</a>.
+
+<p>
+
+Here is a quote from that site:
+
+<p><blockquote>
+
+The <b>3x+1 problem</b>, also known as the Collatz problem, the Syracuse
+
+problem, Kakutani's problem, Hasse's algorithm, and Ulam's problem,
+
+concerns the behavior of the iterates of the function which takes odd
+
+integers n to 3n+1 and even integers n to n/2. The 3x+1 Conjecture
+
+asserts that, starting from any positive integer n, repeated iteration
+
+of this function eventually produces the value 1. 
+
+<p>
+
+The <b>3x+1 Conjecture</b> is simple to state and apparently intractably hard
+
+to solve. It shares these properties with other iteration problems, for
+
+example that of aliquot sequences and with celebrated Diophantine
+
+equations such as Fermat's last theorem. <a href="erdos.html">Paul Erdos</a> commented concerning the intractability of the 3x+1 problem: "Mathematics is not
+
+yet ready for such problems." Despite this doleful pronouncement, study
+
+of the 3x+1 problem has not been without reward. It has interesting
+
+connections with the Diophantine approximation of the binary logarithm
+
+of 3 and the distribution mod 1 of the sequence {(3/2)^k : k = 1, 2,
+
+...}, with questions of ergodic theory on the 2-adic integers, and with
+
+computability theory - a generalization of the 3x+1 problem has been
+
+shown to be a computationally unsolvable problem. In this paper I
+
+describe the history of the 3x+1 problem and survey all the literature
+
+I am aware of about this problem and its generalizations. </blockquote>
+
+<p>
+
+<hr noshade width=50%>
+
+<p>
+
+<h2>Postscript: (12/8/01)</h2>
+
+<blockquote>
+
+If you begin with 77,671, you reach 1,570,824,736 as the biggest number. In the end you reach 1 after 232 steps.  (Source:
+
+<a href="http://members.tripod.de/jkoeller/kaprekar.htm">The Kaprekar Number and more playings with numbers</a>)
+
+</blockquote>
+
+<p>
+
+<hr width=50%>
+
+<p>
+
+<h2>Postscript: (4/28/02)</h2>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WTM has just encountered Tomás Oliveira e Silva's webpage, <a href="http://www.ieeta.pt/~tos">http://www.ieeta.pt/~tos  </a>.  There, under the title <i>Computational verification of the 5x+1 and 7x+1 conjectures</i>, he writes:
+
+<p><blockquote>
+
+Let x be an integer. Let the function T_5(x) be equal to x/2 if x is divisible by 2, equal to x/3 if x is divisible by 3 but not by 2, and equal to 5x+1 otherwise. In a similar way, let the function T_7(x) be equal to x/2 if x is divisible by 2, equal to x/3 if x is divisible by 3 but not by 2, equal to x/5 if x is divisible by 5 but not by 2 and 3, and equal to 7x+1 otherwise. Just like the 3x+1 function, it appears that, starting from any positive integer, the repeated iteration of the T_5(x) and T_7(x) functions eventually reach the integer one, after which the iterates enter a cycle. These are the 5x+1 and 7x+1 conjectures. (The 5x+1 conjecture was suggested to me by Eric Roosendaal.)
+
+<p>
+
+The two functions defined above are special cases of the generalized 3x+1 mapping proposed by Keith Matthews.
+
+</blockquote>
+<p>
+Next, for more than you'd probably ever need to know about this problem, click <a href="http://www.geometry.net/Theorems_and_Conjectures/Collatz_Problem.htm"> here</a>.
+
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table></center>
+
+</BODY>
+
+</HTML>
+
+

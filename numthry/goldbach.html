@@ -1,0 +1,122 @@
+<HTML>
+<HEAD><TITLE>Goldbach's Conjecture</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="FF99CC" text="#660066"><font face="arial" size=4>
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="#FF9933"><img src="man1.gif"></TD>
+<TD WIDTH=80% bgcolor="#FFFF00"><CENTER><B><img src="goldbach.gif"><br><font face="arial" size=4 color="#000000"><center>and his Conjectures</center></font></B></CENTER></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<pre>
+
+	Here's an "oldie but goodie" for you this time!
+
+<center><img src="goldline.gif"></center>
+
+	Some time long ago a mathematician, named C. Goldbach, was playing
+around with prime numbers and noted the following oddity:
+
+<center><h3><font color="#FFFF00">All even numbers, greater than 2, can be expressed as
+the sum of two primes.</font></h3></center>
+
+	This is really a simple idea, as these few examples will show:
+<font color="#0000FF">
+	20 = 7 + 13	    34 = 3 + 31	        42 = 13 + 29
+
+	66 = 19 + 47	   72 = 11 + 61	   100 = 47 + 53
+</font>
+	So what's so hard about that, you ask?  Well, just try proving that it is true
+for ALL even whole numbers!  There's the rub.  Ever since Goldbach made this
+observation, mathematicians, professional and amateur alike, have tried to do
+that.  But with no real success.
+
+	And that's why it is called a "conjecture", my friends.
+
+	A conjecture is a statement that you think is probably true, at least based
+on all the information at hand.  But a "for sure" proof is not available.  You see,
+it is not enough, as in a case like the one before us, to just say, "See!  All the
+even numbers I've tested so far can all be expressed as the sum of a pair of primes.
+So all of them must behave the same way."  Mathematics doesn't work that way.
+
+
+<center><img src="redblue.gif"></center>
+
+	So where do we go from here, you ask?  Well, one of my favorite activities
+for my students is to ask the question:
+
+<center><h3><font color="#FFFF00">How many pairs of primes can be found
+for any specific given even number?</font></h3></center>
+
+	This can be shown quickly by an example: <font color="#FF0000">24.
+
+		5 + 19		7 + 17		11 + 13
+</font>
+	So <font color="#FF0000">24</font> can be expressed with <u><i><b>three</b></i></u> pairs of primes.
+
+	For those interested in making this investigation a bit more elegant, we can
+define this with function notation of advanced algebra in the following way:
+
+<center><h2><font color="#FFFF00">Let GN(<i>n</i>), the "Goldbach Number of <i>n</i>",
+be defined as the number of pairs of primes
+the sums of which are the number <i>n</i>.</font></h2></center>
+
+	So for our example, we would write
+
+<center><font color="#FF0000" size=5>GN(24) = 3</font></center>.
+<center><img src="redblue.gif"></center>
+
+	Now, it's easy to see that this is a good function, as every <i>n</i> (input) has a
+single GN(<i>n</i>) (output).  But what is not so obvious is this fact: as the value of <i>n</i>
+increases, the same can not always be said for GN(<i>n</i>).  Here's a specific
+example of what I am saying here:
+
+			24 <font color="#FF0000" size=5><</font> 26		but GN(24) <font color="#FFFF00" size=5>=</font> GN(26)
+
+because GN(26) also equals 3.  [3+23, 7+19, and 13+13]
+
+	And even more significant is the case for n = 26 and n = 28.  Observe:
+
+			26 <font color="#FF0000" size=5><</font> 28		but GN(26) <font color="#0000FF" size=5>></font> GN(28)
+
+because GN(28) is only 2.  [5+23 and 11+17]  And there are many more such
+instances of this phenomenon.  How many can you find?
+
+	Speaking in the language of algebra, we could say:
+
+<center><h3><font color="#FFFF00">If n <font color="#FF0000" size=4><</font> n+k for some positive integer k,
+it is <font color="#0000FF" size=4>not</font> always true that
+
+GN(n)  <font color="#FF0000" size=4><</font>  GN(n+k).
+
+</font></h3></center>
+
+	Now here's your assignment, class...
+
+	<b>Find the GN values for all the even numbers from 4 to 100.</b>
+
+	To assist you with your work here, a nice table of all the primes between
+1 and 1000 can be found by clicking <a href="psps.html#primes">HERE</a>.
+
+<center><img src="redblue.gif"></center>
+
+<h3>Extension</h3>
+
+	Why stop with pairs of primes and the even numbers?  Let's also use <b>trios</b>
+of primes and go for the <b>odd</b> numbers.  Mr. Goldbach did, or so I hear.
+
+	You surely will find plenty to challenge you here.
+</font>
+<hr width=50%>
+</pre>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

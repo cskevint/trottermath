@@ -1,0 +1,103 @@
+<HTML>
+<HEAD><TITLE>Vanishing Triangles</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="00CCFF">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="66FF00"><img src="litebulb.gif"></TD>
+<TD WIDTH=80% bgcolor="FFFF00"><CENTER><B><font face="arial" size=5>Polynomial Functions<br>and<br>Vanishing Triangles</font></B></CENTER></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<pre>
+<font face="arial" size=5 color="000000">
+	The Calculus of Finite Differences, sometimes called the method
+of vanishing triangles, is a simple procedure for determining which
+polynomial function f(n) will fit a sequence of given numerical data of
+the form "f(0), f(1), f(2), ...".  The approach to constructing the
+triangle is just the reverse of that for Pascal's Triangle, that is,
+instead of adding subsequent entries in a row, you now subtract
+consecutive terms.
+
+	An example will make my point clear.  Let f(n) = 2n<sup>2</sup> + 3n + 4.
+The sequence of values for n = 0, 1, 2, 3, ... is 4, 9, 18, 31, ... .
+The vanishing triangle is
+
+			4     9     18     31
+			   5     9     13
+			      4     4
+			         0
+
+(Any zeros obtained are superfluous and can be omitted in practice.
+They are only mentioned to illustrate how the term "triangle" is
+involved.)
+
+	If one does several functions like the example (i.e. 2nd-
+degree functions), it will be noticed that:
+
+	1) the value in the 3rd row is always a constant and
+	   twice the coefficient of n<sup>2</sup>,
+
+	2) the first entry in the 2nd row equals the sum of the
+	   coefficients of n<sup>2</sup> and n, and
+
+	3) the first entry in the first row is the constant term
+	   in f(n).
+
+Hence, if at least the first three values of f(n), beginning with
+f(0), are known, the coefficients can be determined by examining the
+first entries in the three rows.
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+
+	That the foregoing is true is easily proved.  Let f(n) =
+an<sup>2</sup> + bn + c.  Therefore, the triangle formed with the first four
+values is
+
+		c     a+b+c     4a+2b+c     9a+3b+c
+		  a+b       3a+b           5a+b
+		        2a            2a
+
+The expressions "2a, a+b, and c" confirm the earlier statements as true.
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+
+	This will give the student who likes to discover formulas for
+himself a tool to do so.  For example, what is the general formula
+for the triangular numbers?  The sequence is 1, 3, 6, 10, ... .
+Though this function begins with the value for n = 1, once the triangle
+is set up, it's a simple matter to "back it up" one value.
+
+			0     1     3     6     10
+			   1     2     3     4
+			      1     1     1
+
+As 2a = 1, a + b = 1, and c = 0, the coefficients are a = b = ½  and
+c = 0. Therefore, f(n) = ½ n<sup>2</sup> + n + 0 = ½ n(n + 1)
+
+	The utility of this process will be seen as one continues
+working with numerical functions, especially those of higher degree.
+For example, for data requiring a 3rd-degree function (i.e. f(n) =
+an<sup>3</sup> + bn<sup>2</sup> + cn + d), the necessary expressions are "6a, 6a + 2b,
+a + b + c, and d."  Determining the "guide" expressions for higher
+degree functions just requires careful work in the triangle.
+
+	This is only a brief examination into this topic, as I prefer
+to leave any further discoveries up to you, the reader.
+
+</font>
+<hr width=100%>
+
+This originally appeared in the <u>Bulletin of the Kansas Association
+of Teachers of Matematics</u>.  February 1971, p.20.
+</pre>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table></center>
+</BODY>
+</HTML>

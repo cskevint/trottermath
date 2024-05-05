@@ -1,0 +1,304 @@
+<HTML>
+<HEAD><TITLE>Divisibility Tests</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="#F5DEB3">
+
+<TABLE WIDTH=100%>
+
+<TR>
+<TD WIDTH=30 align=center><img src="bookgirl.gif"></TD>
+<TD WIDTH=50%><CENTER><B><font face="arial" size=6><center>Divisibility<br>Tests</center></font></B></CENTER></TD>
+<TD WIDTH=20% align=center><img src="beanyboy.gif"></TD>
+</TR>
+
+</TABLE>
+<hr size=3 noshade>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowing quickly whether one number is divisible by another is a basic math skill which is very useful and serves many purposes as one studies mathematics at all levels, high or low.  For many readers, this
+page will contain much information that you already know, but I think if you will bear with me, you will learn something that is a bit unusual.  At least, I've never seen it in my school books on math.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I divide my presentation into three parts: primary, secondary, and the "unusual".  The primary section gives the divisibility tests, or rules for the small primes (2, 3, 5, 7, and 11); in fact, that's why it is called the "primary" group.  The secondary group contains the rules for the other small numbers (4, 6, 8, 9, 10, and 12) or special ones (25, 50, and 100).  As for the unusual, well, I'll wait on that to be a little surprise.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So let's begin.
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<center><h3>Primary Group</h3></center>
+
+	A number is divisible by
+<pre>
+	<font size=4><b>2</b></font>: if it is an even number; that is, it ends with 0, 2, 4,
+	   6, or 8.
+
+	<font size=4><b>3</b></font>: if the sum of its digits is a multiple of three.
+
+	<font size=4><b>5</b></font>: if the ending digit (in the units place) is 0 or 5.
+
+	<font size=4><b>7</b></font>: if, after subtracting twice the units digit from the
+	   number formed by the remaining digits, you obtain a
+	   result that is easily seen to be a multiple of 7,
+	   then the original number was also divisible by 7.
+
+	   [Since that rule sounds a bit confusing, we'll take
+	   a moment to show an example.  Test for 308:
+
+		The double of 8 is 16.  30 - 16 = 14.  And
+		since it's easy to know that 14 is a multiple
+		of 7, then we know 308 is likewise.
+
+		Proof: 308 ÷ 7 = 44
+
+	   There's more on this idea later in the unusual section.]
+
+       <font size=4><b>11</b></font>: if a 0 or multiple of 11 is obtained by subtracting
+	   the sum of the digits in the "odd" places with the
+	   sum of the digits in the "even" places.
+
+	   [Again, to help you, I'll show a couple of examples.
+	   Test for 4367 and 1848:
+
+		<font color="#FF0000">4</font><font color="#0000FF">3</font><font color="#FF0000">6</font><font color="#0000FF">7</font> --> (<font color="#FF0000">4 + 6</font>) - (<font color="#0000FF">3 + 7</font>) = <font color="#FF0000">10</font> - <font color="#0000FF">10</font> = 0
+
+		<font color="#FF0000">1</font><font color="#0000FF">8</font><font color="#FF0000">4</font><font color="#0000FF">8</font> --> (<font color="#0000FF">8 + 8</font>) - (<font color="#FF0000">1 + 4</font>) = <font color="#0000FF">16</font> - <font color="#FF0000">5</font> = 11 
+
+  		Proof: 4367 ÷ 11 = 397
+
+		       1848 ÷ 11 = 168]
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+
+<center><h3>Secondary Group</h3></center>
+
+	A number is divisible by
+
+	<font size=4><b>4</b></font>: if the number formed by the final <font color="#FF0000">pair</font> of digits
+	   is likewise divisible by 4.  Example:
+
+		86<font color="#FF0000">72</font> --> <font color="#FF0000">72</font> ÷ 4 = 18
+
+		so 8672 ÷ 4 = 2198
+
+	<font size=4><b>8</b></font>: if the number formed by the final <font color="#0000FF">three</font> digits
+	   is likewise divisible by 8.  Example:
+
+		73,<font color="#0000FF">104</font> --> <font color="#0000FF">104</font> ÷ 8 = 13
+
+		so 73,104 ÷ 8 = 9138 
+
+	<font size=4><b>9</b></font>: if the sum of the digits is a multiple of 9.
+	   Example: 4,617.
+
+		4,617 --> 4 + 6 + 1 + 7 = 18
+
+		since 18 = 9 × 2,
+
+		then 4,617 ÷ 9 = 513
+
+	<font size=4><b>6</b></font>: if the number obeys the rules for 2 and 3; that is,
+	   first it must be an even number, then has a digit
+	   sum which is a multiple of 3.
+
+       <font size=4><b>12</b></font>: if the number obeys the rules for 3 and 4; that is,
+	   it must have a digit sum that is a multiple of 3,
+	   and its final digit pair is a multiple of 4.
+
+[NOTE: The previous two rules combine earlier rules for smaller numbers
+because 6 = 2 × 3 and 2 and 3 are relatively prime; and 12 = 3 × 4 and
+3 and 4 are likewise relatively prime numbers.  And that merely means
+that their greatest common factor is 1.  For more on the concept of
+relatively prime numbers, go <a href="frakcase.html#gcf1">here</a>.]
+
+	We finish this section with some easy and obvious rules, so that
+you can get ready for the wild stuff to follow in the final section.
+
+	<font size=4><b>10</b></font>: if the digit in the units place is 0.
+
+	<font size=4><b>25</b></font>: if the number formed by the final pair of digits
+	    is 25, 50, 75, or 00.
+
+	<font size=4><b>50</b></font>: if the number formed by the final pair of digits
+	    is 50 or 00.
+
+       <font size=4><b>100</b></font>: if the number ends with a "00" pair.	
+</pre>
+<center><img src="Colorbar.gif" width=50% height=3></center>
+<p>
+<center><h3>The Unusual Stuff</h3></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now we really begin the fun part, the part that usually is not included in most, if any, modern school math books.  It actually may have begun for you above with the rule for 7; not too many books even
+discuss that one either.  They should, I feel, because it's small and prime and at times useful.  So, as the girl is pointing to it with her stick, let's take another, closer look at the whole matter.
+<p>
+<center><img src="girlstik.gif"></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some years ago I was reading an old and old-fashioned math book in Spanish.  It had a chapter on divisibility tests that I found rather interesting because not only did it cover the easy basic numbers given above, but also such larger primes as 13, 17, and 19.  Nowadays, if
+divisibility by 13, 17, or 19, or some larger prime were needed, we'd just probably get out our calculators and punch a few keys and be done with it.  Afterall, memorizing a lot of rules for many numbers is not the best way to go about such things, knowing how easy it is to forget things or mix up the details of a given rule.  But to learn about these other rules did prove interesting, nonetheless.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon looking at them carefully, I noted the procedure for each was very much like the rule for 7: multiply the units digit by something, then subtract that product from the number formed by the digits to the left.  For example, and for fun, I'll state the rule for 13 just as it
+was given in the book -- in Spanish!
+<p>
+<p>
+<center><table border=2 cellpadding=10 width=60%>
+<tr><td>
+	<b>Un número es divisible por 13, cuando separando la primera
+	cifra de la derecha, multiplicándola por 9, restando este
+	producto de lo que queda a la izquierda y así sucesivamente,
+	da cero o múltiplo de 13.</b>
+</td></tr>
+</table></center>
+<p>
+<pre>
+	Got that?  You'll understand when I show you the book's example.
+
+	See if 1456 is divisible by 13.
+
+		145'6 × 9 = 54
+	       -<u> 54</u>
+	        09'1 × 9 = 9
+	       -<u> 9</u>
+		 0
+
+	So, yes, 1456 is divisible by 13.
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By now you could probably translate the Spanish as follows:
+<p>
+<center><table border=2 cellpadding=10 width=60%>
+<tr><td>
+	<i>A number is divisible by 13, when separating the first digit
+	to the right, multiplying it by 9, subtracting that product
+	from what remains on the left and continuing in this manner,
+	[until] it gives zero or a multiple of 13.</i>
+</td></tr>
+</table></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, a pattern was beginning to emerge, especially when I saw that the rules for 17 and 19 were pretty much the same; they just
+differed in the multiplier of the units digit.  For 17, you need to multiply by 5, and for 19 you use 17.  Otherwise there was no difference in the procedures.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I liked the rule for 17; you just multiply by five.  That was not so hard.  But I didn't much care for the rule for 19; there you had to multiply by 17, a sorta larger number, at least not a single digit
+as the rules for 7, 13, and 17 were.  However, it was the example for that rule that set me on the trail of why those numbers were selected in the first place.  To explain the rule for 19, the book used 171.  The form of the work was this:
+<pre>
+	171 is divisible by 19 because
+
+			17'1 × 17 = 17
+		      -<u> 17</u>
+			 0
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ah ha!  Look at that 1 in the units place.  Of course, I reasoned, 17 times 1, subtracted from 17, naturally would produce 0.
+Observe how numbers that might be called "1-enders" give us clues for the other rules.  Try <font color="#2D67D2">21</font> (a multiple of 7), <font color="#2D67D2">91</font> (a multiple of 13) and <font color="#2D67D2">51</font> (a multiple of 17):
+<p> 
+<center><b>For 7:   21 --> 1 × 2 = 2 and 2 - 2 = 0.</b></center>
+<p>
+<center><b>For 13:  91 --> 1 × 9 = 9 and 9 - 9 = 0.</b></center>
+<p>
+<center><b>For 17:  51 --> 1 × 5 = 5 and 5 - 5 = 0.</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armed with that knowledge, I was ready to find divisibility rules for more numbers, mainly primes.  Take 23 as our next case.
+Just look for a reasonably small multiple of it that is a "1-ender".  That would be 161 (23 × 7).  So to see if a number was divisible by 23, just multiply the units digit by 16, etc.  Take this number: 782.
+<p>
+<center><b>782 --> 2 × 16 = 32 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 78 - 32 = 46.</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do you see that 46 is 23 is a multiple of 23?  Perhaps not, at least right away.  You see, that's the down side of the rules for larger and larger numbers; the final multiple check is sometimes not as obvious as it was for the smaller cases.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then I began wondering if there wasn't an easier way, at least in the multiplying step.  Let's return to the example above for 19.  What if we <u>ADDED</u> 2 instead of subtracted 17.  Wouldn't that work?
+Here's how it would look.
+<p><pre>
+	171 is divisible by 19 because
+
+			17'1 × 2 = 2
+		      +<u>  2</u>
+			19
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since multiplying by 2 is easier than by 17, this would make some problems easier, especially when the vertical format is being used.  Note: 475.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show that 475 is divisible by 19.
+<pre>
+		Subtracting			Adding
+
+		 47'5 x 17 = 85			 47'5 x 2 = 10
+	       -<u> 85</u>			       +<u> 10</u>
+		  ?				 57
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The subtracting style causes a small problem, especially for elementary students: the second number is larger than the first.  The advanced student would just say "it's negative 38" and go on with it.  Afterall -38 is in fact a multiple of 19.  However, this is not common
+knowledge for many students yet.  The addition process is much simpler and doesn't mess with the negative concept at all.  In fact, if one doesn't recognize that 57 is a multiple of 19 just yet, why not apply the rule one more time? Watch:
+<pre>
+				5'7 × 2 = 14
+			      +<u> 14</u>
+			        19
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And there's your 19, all nicely in front of you!
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+
+<center><img src="qsmark.gif"></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You should be wondering now that if there is an addition way for 19 to go with the regular subtraction way.  Or what about 7, 13, 17, 23, and any future number we might work with?  Well, I'm happy to say that there are numbers for adding the products for each of our situations.  And it's very easy to determine what they are.  And our clue comes from our work with 19.  Recall that 17 was our subtracting-multiplier and 2 was our addition-multiplier.  Notice: that once we find the multiple that is the "1-ender", we obtain our subtraction-multiplier.  Then the addition-multiplier comes naturally.
+<p>
+<center><b>19 - 17 = 2</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And that's all there is to it!!!  Deceptively simple.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To get the general idea, here is a chart for the numbers discussed so far.
+
+<p>
+<center><table border=2 cellpadding=5>
+
+<tr>
+<td>Divisor</td><td>Subt.</td><td>Add'n</td>
+</tr>
+
+<tr align=center>
+<td>7</td><td>2</td><td>5</td>
+</tr>
+
+<tr align=center>
+<td>13</td><td>9</td><td>4</td>
+</tr>
+
+<tr align=center>
+<td>17</td><td>5</td><td>12</td>
+</tr>
+
+<tr align=center>
+<td>19</td><td>17</td><td>2</td>
+</tr>
+
+<tr align=center>
+<td>23</td><td>16</td><td>7</td>
+</tr>
+
+</table></center>
+<p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perhaps you'd like to extend it a bit further.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One closing comment:  as you are beginning to test a certain number to see if it is divisible by something and you use the addition-multiplier, but on the next step (if there is a need for one) you see
+that the subtraction-multiplier might be better, feel free to switch.  Yes, you can <i>change horses in the middle of the stream</i>!  Isn't that nice?
+<p>
+<hr noshade>
+<h3>Update April 2002</h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you are interested in the divisibility test for the palindromic year <b>2002</b>, try this:
+<p>
+<blockquote>
+Here is a test for the question if a number n is divisible by <font color="blue">2002</font>...
+<p>
+The number must be even and, combine three digits of the number in order (from right to left) alternating them with + then -.  If the result is 0 or a multiple of 1001, then the number 2002 divides it.  E.g. is 1976756782 divisible by 2002 ? 782 - 756 + 976 - 001 = 1001. Yes, it is ! 
+</blockquote>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For this, and more interesting trivia about 2002, go to the <a href="http://users.skynet.be/worldofnumbers/year2002.htm">World!Of Numbers</a>.  You will be well rewarded!
+<p>
+<hr noshade>
+<p>
+<b><h3>Update: January 24, 2003</h3></b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For more information, consult <a href="http://mathforum.org/dr.math/faq/faq.divisibleto50.html">Ask Dr. Math</a> in the famous Math Forum site.
+<p>
+<hr size=4 noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

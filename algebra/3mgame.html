@@ -1,0 +1,188 @@
+<HTML>
+<HEAD><TITLE>3M Game</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="#FFFF00">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="#FFCC00"><img src="recycle.gif"></TD>
+<TD WIDTH=60% bgcolor="#FF0000"><CENTER><B><font face="arial" size=6><center>The "3M" Game</center></font></B></CENTER></TD>
+<TD WIDTH=40% align=center bgcolor="#FFCC00"><img src="recycle.gif"></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<p><font face="comic sans ms" size=4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I well remember my wonder that I experienced when I learned about logarithms in Advanced Algebra.  The thing that most caught my attention was that you could "multiply two numbers" through a not-so-
+simple addition process.  To do this, you first find the logarithm of each of the two numbers, add them, then reconvert that back to a number that would be the product required.  Sounds complicated, but it works!
+<p>
+<i>(For those readers who have not reached this level of math yet, do not turn away from this page until you've read a little more.)</i>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In algebra, we write the basic logarithmic property this way:
+<p>
+<center><h2>log (a × b)  =  log a  +  log b</h2></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of course, this is just a "taste" of a much larger and grander topic in mathematics, but it is meant to give a connection to what I want to show you this time, namely how you can <b>"MULTPLY by ADDING"</b>, using a much simpler, arithmetic basis.
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<b><font size=4>Triangular Numbers</font></b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before we can proceed, we must introduce what to some persons may be a new topic, that of <b>Triangular Numbers</b>.  Square numbers have been discussed frequently in this website, but now we are going to
+look at a family of numbers that form triangles.  Observe:
+<p>
+		<font color="#FF0000">10</font> is a triangular number, because 10 things can be arranged in a triangular array like this:
+<pre>
+				<font color="#FF0000">*
+				* *
+				* * *
+				* * * *</font>
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From this sort of picture it is easy to form and determine many other triangular numbers.
+<pre>
+		<font color="#FF0000">*		*		*
+				* *		* *
+						* * *</font>
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here we see that <font color="#FF0000">1, 3,</font> and <font color="#FF0000">6</font> are the first three triangular numbers.  And OF COURSE with these few examples we can see a short cut for
+finding other triangular numbers.
+<pre>
+		10 = 1 + 2 + 3 + 4
+		 6 = 1 + 2 + 3
+		 3 = 1 + 2
+		 1 = 1
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So going in the higher direction, we have <font color="#FF0000">15, 21, 28, 36, 45,</font> and <font color="#FF0000">55,</font>
+thus giving us the first ten triangular numbers.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To make discussing a particular triangular number a bit more convenient, we will use the following notation [using the 4th one as an example]:
+<p>
+<center><h2><font color="#0033FF">T<sub>4</sub> = 10</font></h2></center>
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+
+<center><table border=2 CELLPADDING=10>
+
+<tr bgcolor="#00CCFF">
+<td COLSPAN=5 align=center><font face="arial" color="#FF0000"><b>The First 50 Triangular Numbers</b></td>
+</tr>
+
+<tr>
+<td>T<sub>1</sub> =   1</td><td>T<sub>11</sub> =    66</td><td>T<sub>21</sub> = 231</td><td>T<sub>31</sub> = 496</td><td>T<sub>41</sub> =   861</td>
+</tr>
+
+<tr>
+<td>T<sub>2</sub> =    3</td><td>T<sub>12</sub> =    78</td><td>T<sub>22</sub> = 253</td><td>T<sub>32</sub> = 528</td><td>T<sub>42</sub> =   903</td>
+</tr>
+
+<tr>
+<td>T<sub>3</sub> =    6</td><td>T<sub>13</sub> =    91</td><td>T<sub>23</sub> = 276</td><td>T<sub>33</sub> = 561</td><td>T<sub>43</sub> =   946</td>
+</tr>
+
+<tr>
+<td>T<sub>4</sub> = 10</td><td>T<sub>14</sub> = 105</td><td>T<sub>24</sub> = 300</td><td>T<sub>34</sub> = 595</td><td>T<sub>44</sub> =   990</td>
+</tr>
+
+<tr>
+<td>T<sub>5</sub> = 15</td><td>T<sub>15</sub> = 120</td><td>T<sub>25</sub> = 325</td><td>T<sub>35</sub> = 630</td><td>T<sub>45</sub> = 1035</td>
+</tr>
+
+<tr>
+<td>T<sub>6</sub> = 21</td><td>T<sub>16</sub> = 136</td><td>T<sub>26</sub> = 351</td><td>T<sub>36</sub> = 666</td><td>T<sub>46</sub> = 1081</td>
+</tr>
+
+<tr>
+<td>T<sub>7</sub> = 28</td><td>T<sub>17</sub> = 153</td><td>T<sub>27</sub> = 378</td><td>T<sub>37</sub> = 703</td><td>T<sub>47</sub> = 1128</td>
+</tr>
+
+<tr>
+<td>T<sub>8</sub> = 36</td><td>T<sub>18</sub> = 171</td><td>T<sub>28</sub> = 406</td><td>T<sub>38</sub> = 741</td><td>T<sub>48</sub> = 1176</td>
+</tr>
+
+<tr>
+<td>T<sub>9</sub> = 45</td><td>T<sub>19</sub> = 190</td><td>T<sub>29</sub> = 435</td><td>T<sub>39</sub> = 780</td><td>T<sub>49</sub> = 1225</td>
+</tr>
+
+<tr>
+<td>T<sub>10</sub> = 55</td><td>T<sub>20</sub> = 210</td><td>T<sub>30</sub> = 465</td><td>T<sub>40</sub> = 820</td><td>T<sub>50</sub> = 1275</td>
+</tr>
+
+
+</table>
+</center>
+
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<b><font size=4>Magical Multiplying Method</font></b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally we're ready to show you the magical way to multiply without multiplying anything.  I call it the "Magical Multiplying
+Method" (or the "3M" way).  First, I must confess we will do a little
+subtracting, too.  Second, you will need a copy of the table above.
+I hope you don't mind too much. 
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Let's take as an example 15 × 9.
+<p><blockquote>
+<ol>
+<li>Take the larger factor 15 and find T<sub>15</sub> in the table above.  It is 120.
+<p>
+<li>Subtract 1 from 9, the smaller factor, getting 8.  Find T<sub>8</sub> in the table.  It is 36.
+<p>
+<li>Subtract the two factors, 15 - 9; that's 6.   Find T<sub>6</sub>.  It is 21.
+<p>
+<li>Add the results of Steps #1 & #2, then subtract the result from Step #3.  That's your product!
+</ol></blockquote>
+<p>
+<center><b>120 + 36 - 21 = 135</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<i>Well, I never said it was going to be easier, shorter, or anything like that.  It's just an interesting idea by itself, don't you agree?  And with practice, it's not too difficult.</i>]
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We can summarize this by a little algebra.  This is the formula for the steps given above.
+<p>
+<center><h2><font color="#0033FF">a × b = T<sub>a</sub> + T<sub>b-1</sub> - T<sub>a-b</sub></font></h2></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doesn't look so bad now, or does it?
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<b>Rationale</b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The reasons why I am presenting this activity are various:
+<p>
+<ol>
+<li>It's a different way to do a common thing.
+<p>
+<li>It's a good experience in "following steps" to achieve a certain goal.
+<p>
+<li>It shows a connection between advanced math (logarithms) and simple arithmetic, both of which are being used to multiply two numbers.
+<p>
+<li>It provides an experience in looking up information in tables to use for a certain purpose.
+<p>
+<li>It show how an algebraic formula can show the various steps in compact style.
+</ol>
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<b>Extension Activity</b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For students who are, or have been, in Algebra I, it would be a good challenge to prove that the formula indeed works for ALL numbers <b>a</b> and <b>b</b>.  To do so, however, one needs to know the general formula for the triangular numbers.  I will not show how it is derived, rather just state it here.
+<p>
+<center><h2><font color="#008000">T<sub>n</sub> = ½n(n+1)</font></h2></center>
+<p>
+
+<hr noshade>
+	
+<p>
+
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

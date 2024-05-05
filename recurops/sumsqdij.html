@@ -1,0 +1,92 @@
+<HTML>
+<HEAD><TITLE>Happy & Dizzy Numbers</TITLE></HEAD>
+<BODY bgcolor="7FFFD4">
+
+<TABLE WIDTH=100%>
+
+<TR>
+<TD WIDTH=15% align=right><img src="smile.gif"></TD>
+<TD WIDTH=70%><CENTER><B><h1>Happy & Dizzy Numbers</h1></B></CENTER></TD>
+<TD WIDTH=15%><img src="smile.gif"></TD>
+</TR>
+
+</TABLE>
+<hr width=100% noshade>
+
+<center><h2>Part I: Happy Numbers</h2></center>
+<p>
+
+<h3>INTRODUCTION</h3>
+<font size=4>
+     Before we can explain what a happy number is, you have to learn a new idea, called "recurrent operations."  As the word "recur" means "to happen again", a recurrent operation must mean a mathematical
+procedure that is repeated.  A very simple example would be the rule "add 5 to the result".  If we started with the number 0 and applied that recurrent operation rule, we would produce the sequence 0, 5, 10, 15, 20, ... ; this list is the famous "multiples of five".
+<p>
+     Of course, there are all kinds of recurrent operation rules in mathematics.  Another important rule is "multiply each result by 2".  If we used 1 as our first number, this sequence shows up: 1, 2, 4, 8, 16, 32, ... ; this list is the also famous "powers of two".   So, you see it's really not such a difficult idea now, is it?
+<p>
+     However, in order to produce "happy numbers", we will invent a rule that is just a little bit more complicated.  (After all, you
+didn't expect this to be that easy, did you?)  Our rule now will be given in two steps: (1) find the squares of the digits of the starting number; then (2) add those squares to get the result that will be used in the repeat part of your work.
+<p>
+     Here is an example.  Let's start with 375.  We write:
+<p>
+<center><b>3<sup>2</sup> + 7<sup>2</sup> + 5<sup>2</sup>  =  9 + 49 + 25  =  83</b></center>
+<p>
+     Now we repeat the R.O. procedure with 83.  This gives us:
+<p>
+<center><b>8<sup>2</sup> + 3<sup>2</sup>  =  64 + 9  =  73</b></center>
+<p>
+     Of course, we continue with 73.  This will produce 58.
+<p>
+<hr width=25%>
+<p>
+<h3>HAPPY NUMBERS</h3>
+
+     But we can hear you saying: "When do I  stop?  What's the point of all this?"   That's the beautiful part of the story.  The answer is: when you see something strange happening. The strange thing that tells when a number is happy is simply this: <i>the result of a 1 eventually occurs</i>. Here is an example, starting with the number 23: 
+<p>
+<center>4 + 9 = 13; 1 + 9 = 10; and 1 + 0 = 1.</center>
+<p>
+It's that easy!  When you reach a 1, the starting number is called <B>happy</B>. [But don't ask why it's happy, instead of sad; that's just what the books say.]
+<p>
+     Once you determine a number is happy, you can say all the intermediate results are also happy.  The numbers 13 and 10 must also
+be considered as happy, because they too produce a 1.
+<p>
+     Can you find some more happy numbers?  Yes.  If you know a certain number is happy, it's easy to find many more.  How?  One way
+is to insert a zero or two.  Look: above we saw that 23 was happy, right?  This means that 203 is also happy; so is 230.  A larger example is 2003.  See?  Now you can make many, many happy numbers, using an old one with as many zeros as you wish.
+<p>
+     But that's the easy way.  You want something a bit more challenging, don't you?  Well, that's your task now -- find some more happy numbers without using the "zeros" technique.  Okay?
+<p>
+<hr width=75%>
+<p>
+<center><h3>Part II: Dizzy Numbers</h3></center>
+<p>
+     The term "dizzy numbers" was invented by me.  It is based on an idea that should  occur to anyone searching for happy numbers, because often they find themselves "going in circles", literally, i.e. getting
+dizzy.  Here's why: 
+<p>
+<img src="cycle8.gif" align="right">     Recall the number 375 from above?  It produced the sequence 83, 73, 58,...  But we stopped there in our explanation of the RO procedure. If we had continued, we would have had 89, 145, 42, 20, 4, 16, 37, and then back to 58!  Hmm... now that's strange, isn't it?  We've returned to where we were (58) just eight steps earlier; we've gone in a circle. We've produced an 8-term numerical cycle.  Hence, we're getting a little dizzy.  (Get it?)
+<p>
+     So we can now define more formally a <b>dizzy number</b> to be one that is either part of that cycle or produces a sequence that enters the cycle eventually (like 375 did).
+<p>
+     Now, do you want to hear something really strange?  All numbers that are not happy are dizzy!  That's right.  No matter how big or small a number may be, if you use the sum-of-the-squares-of-the-digits RO procedure on it, you either reach a 1 or the 8-term cycle.  Amazing,
+isn't it?
+<p>
+     Now armed with this new knowledge, you are ready to classify any number as <b>happy</b> or <b>dizzy</b>.
+<p>
+     Have fun!</font>
+<p>
+<hr noshade>
+<p>
+For more activities about recurrent operations, go to <a href="kaprekar.html">Kaprekar</a> or <a href="ulam.html">Ulam</a>.
+<p>
+<hr noshade><br>
+<h2>UPDATE: (6/24/02)</h2>
+
+For additional information about this interesting topic, go to <a href="http://www.wschnei.de/digit-related-numbers/happy-numbers.html">Mathews: Happy Numbers</a>.
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

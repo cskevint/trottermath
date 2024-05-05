@@ -1,0 +1,189 @@
+<HTML>
+<HEAD><TITLE>Grade Scaling</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="FFFFFF">
+
+<TABLE WIDTH=100% Border=2 cellpadding=10>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="CCCCCC"><img src="bargraph.gif"></TD>
+<TD WIDTH=80% bgcolor="000000"><CENTER><B><font face="arial" size=5 color="FFFFFF">GRADE SCALING</font></B></CENTER></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<pre>
+(The following letter appeared in the November 1992 issue of THE
+MATHEMATICS TEACHER, p. 608)
+
+	When our students' performance on tests or quizzes is below our
+expectations, we have a number of options, including the following: (a)
+let the results stand, (b) throw out the test, (c) give a retest (Spiegel
+1991), (d) change the scale used to assign a letter grade, or (e) adjust,
+or scale, the numerical grades.
+	The following is not an endorsement of modifying grades to fit
+expectations.  Such action, used improperly, can easily dilute the
+integrity of teaching by creating an illusion of success.  However,
+occasionally such action is justifiable.  If teachers must modify grades,
+they should do so fairly and infrequently.
+	One typical method of scaling grades is simply to add a given
+number of percent points to each score.  This solution is reasonable if
+no students have a high score, but it creates a problem if some have
+scored at or near 100 percent.
+	Here is a method to scale test scores that prevents the revised
+score from exceeding 100 percent.  Use of this system is most appropriate
+when the grade-distribution curve is rather flat (having a large stadard
+deviation) and has an unacceptably low average.  First, select a "scale
+factor", usually from 0.9 to 0.6, depending on the degree of adjustment
+desired.  The smaller the scale factor (<i>F</i>), the greater the scaling
+effect.  The adjusted score is computed as follows:
+
+<center><b>adjusted score = 100 - <i>F</i>(100 - original score)</b></center>
+
+<b>Table 1</b> summarizes the results of applying various values of <i>F</i> on a
+range of percent scores.
+
+<center><b>TABLE 1</b></center>
+</pre>
+<center><table cellpadding=10 border=2>
+<tr><td colspan=6><center>Adjusted Scores for Various Values of <i>F</i><br>Adjusted Score = 100 - <i>F</i>(100 - Original Score)</center></td></tr>
+<tr><td>Original Score</td><td colspan=5>Scores Adjusted for Various <i>F</i>, 0.9 - 0.5</td></tr>
+
+<tr>
+<td><font color="FFFFFF">.</font></td><td><b>0.9</b></td><td><b>0.8</b></td><td><b>0.7</b></td><td><b>0.6</b></td><td><b>0.5</b></td>
+</tr>
+
+<tr>
+<td><center>30</center></td><td>37</td><td>44</td><td>51</td><td>58</td><td>65</td>
+</tr>
+
+<tr>
+<td><center>40</center></td><td>46</td><td>52</td><td>58</td><td>64</td><td>70</td>
+</tr>
+
+<tr>
+<td><center>50</center></td><td>55</td><td>60</td><td>65</td><td>70</td><td>75</td>
+</tr>
+
+<tr>
+<td><center>60</center></td><td>64</td><td>68</td><td>72</td><td>76</td><td>80</td>
+</tr>
+
+<tr>
+<td><center>70</center></td><td>73</td><td>76</td><td>79</td><td>82</td><td>85</td>
+</tr>
+
+<tr>
+<td><center>80</center></td><td>82</td><td>84</td><td>86</td><td>88</td><td>90</td>
+</tr>
+
+<tr>
+<td><center>90</center></td><td>91</td><td>92</td><td>93</td><td>94</td><td>95</td>
+</tr>
+
+
+</table></center>
+<pre>
+	Note that the net effect of the system is to compress the grade
+curve from the left, the lower scores receiving the greatest amount of
+change.  Higher scores are changed less and are never adjusted to more
+than 100 percent.  The system is especially easy to use if a spreadsheet
+is used for grade keeping and computation.
+	This system is not just for mathematics teachers.  Readers who
+find merit in it are invited to share it with the rest of their faculty.
+
+	Reference: Speigel, Carol. "Tips for Beginners: Grading Schemes
+That Reward Students." Mathematics Teacher 84 (November 1991): 631.
+<i>
+	Gary G. Welch
+	Papillon-La Vista High School
+	Papillon, NE 68046</i>
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+
+<h3>NOTE<h5>(from WTM)</h5></h3>
+
+	The formula given above is actually easier to compute with if
+the following form is used:
+
+<center><b>A.S. = 100(1 - F) + F(O.S.)</b></center>
+
+For example, once a value for F has been chosen (say 0.9), the formula
+simplifies to
+
+<center><b>A.S. = 10 + 0.9(O.S.)</b></center>
+
+which is very easy to compute with, even using a simple calculator.
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+
+(Then these two letters appeared in the May '93 issue...)
+
+	I have been using Gary G. Welch's method of scaling test scores
+for several years (November, "Grade Scaling", 608).  Many of the
+scientific calculators now include a linear-regression function, which
+makes Welch's method easy to apply.
+	After keying the original score (%), the adjusted score can be
+calculated with a single keystroke.  For example, the calculate the
+scores in the column headed by 0.9, only two data points need to be
+keyed into the calculator, like (30, 37) and (90, 91).  (Be sure to
+clear out the stat or sigma registers before entering these points.)
+Then, any score in the 0.9 column can be calculated quickly and easily
+by keying in any original score (%) and then pressing the predict-<i>y</i>
+button.
+	This method is an application of the slope-intercept equation
+of a straight line.  It is usually easiest to key in the adjusted scores
+of the lowest and highest grades to establish the formula.  Not only
+does the calculator calculate the formula, it also applies it.
+<i>
+	Cecil Erdly
+	Lakeland Christian School
+	Lakeland, FL 33803</i>
+
+<hr width=40%>
+
+	I read with interest the letter from Gary G. Welch in the
+November 1992 issue of the Mathematics Teacher.  I have for many years
+used a method that is arithmetically identical to Welch's yet can be
+more easily be explained to students.  Furthermore, the explanation
+uses techniques of data analysis so that students can see an application
+of what they have learned in class.  I also have an easy way to choose
+the scale factor to which Welch's letter refers.
+	If the examination is one that I wish to "curve", I first
+determine the median of the original test scores.  I then decide what
+I would like the median to be, and the difference between those two
+scores divided by the real median becomes my scale factor.  Thus, if
+the median of my data were 72, and I wished it to be 84, I would choose
+a scale factor of 84 - 72/72 [<i>sic</i>.], or 1/6; if I wished it to be 80,
+I would choose a scale factor of 80 - 72/72 [<i>sic</i>.], or 1/9.  The
+adjusted score is computed as follows, with <i>F</i><sub>1</sub> being the scale factor:
+adjusted score = original score + <i>F</i><sub>1</sub>(100 - original score).  Letting
+<i>S<sub>o</sub></i> = original score and <i>S</i><sub>a</sub> = adjusted score,
+
+                     <i>S</i><sub>a</sub> = <i>S<sub>o</sub></i> + <i>F</i><sub>1</sub>(100 - <i>S<sub>o</sub></i>)
+                        = <i>S<sub>o</sub></i> - <i>F</i><sub>1</sub>·<i>S<sub>o</sub></i> + 100·<i>F</i><sub>1</sub>.
+
+	By letting <i>F</i><sub>2</sub> be the scale factor, Welch's formula becomes
+
+                    <i>S</i><sub>a</sub> = 100 - <i>F</i><sub>2</sub>(100 - <i>S<sub>o</sub></i>)
+                       = 100 - <i>F</i><sub>2</sub>·100 + <i>F</i><sub>2</sub>·<i>S<sub>o</sub></i>.
+
+This formula doesn't look like mine, but our scale factors are different,
+with mine the compliment of his, so that <i>F</i><sub>2</sub> = 1 - <i>F</i><sub>1</sub>.  With the
+substitution, the formulas are seen to be identical.
+	I prefer my formula because students can see an application of
+the median and because the choice of scaling factor makes sense to them.
+<i>
+	Albert Goetz
+	Rabbi Joseph H. Lookstein Upper School
+	New York, N.Y. 10021-0279</i>
+
+<hr width=50%>
+</pre>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table></center>
+</BODY>
+</HTML>

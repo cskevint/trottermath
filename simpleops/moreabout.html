@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>More About P = N^2+M^3</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center><img src="squares1.gif"></TD>
+<TD WIDTH=60% bgcolor="FF3300"><CENTER><B><font face="comic sans ms" size=7>More About<br>P = N<sup>2</sup> + M<sup>3</sup></font></B></CENTER></TD>
+<TD WIDTH=20% align=center><img src="cubes2.gif"></TD>
+</TR>
+</table>
+<hr noshade>
+<p><blockquote>
+<font size=2 color="009900">This article originally appeared in the January 1971 issue of the <i><b>Journal of Recreational Mathematics</b></i>.  For additional coverage of this topic, go to <a href="http://www.geocities.com/ttrotter3/triggnos.html">Trigg Numbers</a></font>
+</blockquote>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In [1], C.W. Trigg discussed those positive integers less than 10,000, which are expressible in the form of N<sup>2</sup> + M<sup>3</sup>, where N and M are also positive integers.  Many of the special properties of the integers were listed such as being palindromes or squares, or having more than one representation, for example.
+<p>
+	As I glanced over the square entries, I noted some extra relationships not covered by Mr. Trigg.  When N = 6 and M = 4, not only does 6<sup>2</sup> + 4<sup>3</sup> = 100, but also (6 + 4)<sup>2</sup> = 100.  Likewise , when N = 10 and M = 5, then 10<sup>2</sup> + 5<sup>3</sup> = 225, and (10 + 5)<sup>2</sup> = 225.  While this pattern of N<sup>2</sup> + M<sup>3</sup> = (N + M)<sup>2</sup> is true for only about one-third of the cases, I set out to discover what patterns, if any, existed in all of them.
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To simplify some of the following, let P = A<sup>2</sup>, where P is one of the squares in Trigg's list.  Thus, in the two cases cited above, N + M = A.  Of  the 34 cases in the list, 12 possess this pattern.  Eleven more can be expressed as the sum of N and some multiple of M, that is A = N + tM, where t = 2, 3, and 4.  (See Table I for the breakdown of these 23 cases.  The remaining eleven cases are not as simple, and will be treated separately.)
+<p>
+<center><img src="tableI.gif"></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are a number of patterns in Table I:
+<p>
+<ol>
+<li>For any given entry, the values for M and N are related by the general formula,
+<p><pre>
+                                    M(M - t<sup>2</sup>)
+                              N = --------------- .
+                                        2t
+</pre>
+<p>
+<li>The first M-value is always an integral multiple of <i>t</i>, therefore the values are always in arithmetic progression; and no multiple after the first one is omitted.<br><br> 
+<li>For any given entry, the M-N values are related to the N-value in the next entry.  For t = 1,the sum of the N and M values equals the following N-value.  For all t > 1, the M-N sum must be diminished by an appropriate triangular number, according to the following recursion formula:
+<p>
+<center>N<sub>k+1</sub> = N<sub>k</sub> + M<sub>k</sub> - ½ t(t - 1). </center>
+<p>
+<li>For each value of <i>t</i>, there is always one entry where N = M.  This occurs on the second entry of the section.  (It is easily proved by substituting "t(t + 2)", the formula for all second M-values, into the equation given above for pattern #1.)  Also, it is interesting to note that the set of these equal values is the same as the sequence of N-values in the t = 2 section of the table!
+</ol>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although Mr. Trigg restricted his discussion to positive integers, this need not be so.  Other unique patterns emerge when negative integers are introduced.  Table II shows the upward extension of the Table I columns so as to include negative integers and zero (the P-column being omitted).
+<p>
+<center><img src="tableII.gif"></center>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The most obvious fact here is that the N and A columns are "inversely identical", that is, rotate the N-column 180° about the point where all three numbers, N, M, and A, are zero, and the A-column is the result.  Next, the number of negative integers in either column is always one less than the t-value for the group.  When the absolute values of those negative integers are arranged in a triangular array, the result is
+<p>
+<pre>
+                                             0*
+                                             1
+                                         3       3
+                                     6       8       6
+                                10      15      15      10
+                            15      24      27      24      15
+                        21      35      42      42      35      21
+                    28      48      60      64      60      48      28
+                36      63      81      90      90      81      63      36
+
+</pre>
+<p>
+*Here, 0 signifies "no negative integers are present."
+<p>
+It's readily seen that the rows are symmetric, analogous to the rows in Pascal's Triangle.  The sequences of integers along the diagonals have their corresponding matches in the N and A columns of Tables I and II.  The values directly under the vertex are cubic integers.  Finally, when the rows are totaled and denoted S<sub>t</sub>, the sequence of sums is 0, 1, 6, 20, 50, 105,….  The terms obey the 4th-degree formula
+<p><pre>
+                                             t<sup>2</sup>(t<sup>2</sup> - 1)
+                                       S<sub>t</sub> = ------------ .
+                                                12
+</pre>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One final observation before we leave these particular P-squares: The digital roots of all the P-squares, represented by P = N<sup>2</sup> +  M<sup>3</sup> =  (N + tM)<sup>2</sup>, are either 1 or 9.  As all squares have digital roots of either 1, 4, 7, or 9, it seems remarkable to me that only two of the four possible values ever occur.  Also, whenever <i>t</i> is a multiple of three, the digital roots are always 9; when <i>t</i> is not a multiple of three, the frequency of 1 and 9 occurs in a ratio of 1:2.  (The proof of these statements is left to the reader.)
+<p><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now we return to the remaining eleven cases referred to earlier.  They are represented by the formula A = N + M  ± c.  (See Table III for the breakdown of these cases.)  
+<p>
+<center><img src="tableIII.gif"></center>
+<p>
+Note that <i>c</i> is always an even integer.  In the "minus-<i>c</i>" group, there are three cases each for c = 2 and c = 4.  While this seems to be the limit for c = 2, I have found at least two more entries for c = 4, though they yield P-squares larger than 10,000 (see Table IV).  The "plus-c" group requires a different c-value for each case; and while there is only one entry for each A-formula stated here, three of them (c = 6, 10, and 12) will yield other entries from the t = 2 section of Table I (when M = 6, 10, and 12, respectively).  The fact that there are many even integers missing in the c-column (with no readily discernable pattern among the given five) does not imply that solutions do not exist for them.  For example, when c = 8, we obtain an entry in Table I -- 576, 8, 8, 24.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The value for <i>c</i> can be extended to other even integers as well.  For example, I've found six P-squares for c = 6, again all larger than 10,000 (see Table IV).
+<p>
+<center><img src="tableIV.gif"></center>
+<p>
+	
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some interesting questions, but whose answers are unknown to this writer, arose while considering these cases.  Can <i>c</i> be odd?  Does there exist a limit to the value for <i>c</i>?  is there a limit to the number of entries a given <i>c</i> may have?
+<p><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All these observations, based on the curious relationships cited at the beginning of this article, only serve to illustrate that often there are more patterns behind a set of data than first meets the eye.  I have, on occasion, taken the liberty of extending the tabular information beyond what was given by Mr. Trigg.  This was done, of course, so that late appearing patterns could manifest themselves.
+
+<p>
+<b><center>REFERENCE</center></b>
+<p>
+1.  Charles W. Trigg, "Integers Equal to N<sup>2</sup> + M<sup>3</sup>", JRM, Vol. 2, No. 1, January 1969, pp. 44-48.
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</body>
+</html>

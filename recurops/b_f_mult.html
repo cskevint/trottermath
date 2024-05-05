@@ -1,0 +1,353 @@
+<HTML>
+<HEAD><TITLE>Back-to-Fronty Multiplication</TITLE></HEAD>
+<BODY bgcolor="#66CDAA">
+
+<TABLE WIDTH=100%>
+
+<TR>
+<TD WIDTH=15%><img src="froghat1.gif"></TD>
+<TD WIDTH=70%><CENTER><B><font face="impact" size=6>Back-to-Front Multiplication</font></B></CENTER></TD>
+<TD WIDTH=15%><img src="froghat2.gif"></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<p>
+<b><center><font face="arial">Generating Computational Oddities</font></center></b>
+<p>
+<h4><b>Introduction</b></h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While contemplating on the number curiosity below, I discovered that it possessed deeper and unexpected characteristics, structure, and patterns.  I have not seen any discussion of these findings in the recreational literature I have read.  Hence,  it is being offered with
+the belief that I have uncovered a new recurrent operation pattern of a cyclic nature.  It is dramatic proof that there often is a lot more structure than we realize behind most of the very innocent-appearing number puzzles.
+<p>
+<hr width=50%>
+<p>
+<h4><b>The Problem</b></h4>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the April 1962 issue of <u>Recreational</u> <u>Mathematics</u> <u>Magazine</u>, there appears the following multipication oddity:
+<p>
+<center><i><b><font size=4>421,052,631,578,947,368 can be doubled by shifting<br>
+the last digit to the front</font></b></i>. (p. 34)</center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desiring to use such fascinating problems in my school teaching at the junior high level, I wondered, "Are there more such problems, or is this just a freak case?"
+<p>
+<hr width=50%>
+<p>
+<b><h4>The Solution</h4></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To my great surprise, once the simple secret of their construcion is understood, I found it very easy to find quite a few such examples.  But, often one has to be rather patient for the required factors to reveal themselves.  To facilitate the following discussion, I will demonstrate
+the construction method with a simple example.  (This will also serve to
+motivate the rationale behind the recurrent operation to be described shortly.)
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Say that we desire to have a problem where "4" is our single-digit multiplier, and "7" is to be the shifted unit's digit.  We begin by setting those digits in their normal places (see Figure 1a).
+<pre><b>
+		          2           2  	3 2 
+        	7	  _ 7         8 7       _ 8 7
+            <u>×   4</u>       <u>×   4</u>       <u>×   4</u>      <u>×    4</u>
+		            8	        8	  4 8
+              (a)        (b)         (c)	 (d)
+
+				Figure 1
+
+</b></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The indicated multiplication is carried out as shown in Figure 1b.  Then as the "8" is the unit's digit of the product, it follows that it must be the ten's digit of the factor as well (see 1c).  Figure 1d shows how the process is to be repeated.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But when does it stop?  It's quite simple: when you obtain a "7" to place in the product and there is no "carry" involved.  In the example before us, we are fortunate to arrive at another "7" in only six steps:
+<pre><b>
+			3   3   1   3   2
+			1   7   9   4   8   7
+			<u>  		×   4</u>
+			7   1   7   9   4   8
+</b></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In general then the process continues until such time that the shifted digit itself is the outcome of one of the steps.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By using this procedure for other original digit choices, one can produce multiplication problems that possess the back-to-front shift property for the multi-digit factor.
+<p>
+<center>
+<table width=90% border=2 cellpadding=10 bgcolor="#FFFF00">
+
+<tr>
+<td colspan=2 align=center><font face="arial"><b>Table 1.  Back-to-Front Multiplication Integers</b></font></td>
+</tr>
+
+<tr>
+<td width=10% align=center><b><font face="arial">Single-digit factor</font></b></td>
+<td width=90% align=center><font face="arial"><b>The Special Integers</b></font></td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>2</font></td>
+<td><font face="comic sans ms" size=2>105,263,157,894,736,842</font></td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>3</font></td>
+<td><font face="comic sans ms" size=2>1,034,482,758,620,689,655,172,413,793</font></td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>4</font></td>
+<td><font face="comic sans ms" size=2>102,564      128,205        153,846        179,487           230,769</font></td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>5</font></td>
+<td><font face="comic sans ms" size=2>102,040,816,326,530,612,244,897,959,183,673,469,387,755 <br>142,857</font>
+</td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>6</font></td>
+<td><font face="comic sans ms" size=2>1,016,949,152,542,372,881,355,932,203,389,830,508,474,-
+         576,271,186,440,677,966</font></td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>7</font></td>
+<td><font face="comic sans ms" size=2>1,014,492,753,623,188,405,797<br>
+ 1,159,420,289,855,072,463,768<br>
+ 1,304,347,826,086,956,521,739</font>
+</td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>8</font></td>
+<td><font face="comic sans ms" size=2>0,253,164,556,962<br>
+ 0,379,746,835,443<br>
+ 0,886,075,949,367<br>
+ 1,012,658,227,848<br>
+ 1,139,240,506,329</font>
+</td>
+</tr>
+
+<tr>
+<td align=center><font face="comic sans ms" size=2>9</font></td>
+<td><font face="comic sans ms" size=2>03,370,786,516,853,932,584,269,662,921,348,314,606,741,573
+ 10,112,359,550,561,797,752,808,988,764,044,943,820,224,719</font>
+</td>
+</tr>
+
+</table>
+</center>
+
+<p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table 1 presents a summary of what I choose to call the "primary" solutions.  These solutions were developed in the following systematic manner:
+<pre>
+	1)  First I selected various digits (destined to be the shifted
+	    unit's digits) that were equal to or greater than certain
+	    single-digit multipliers.
+	2)  While computing all such cases, I observed that frequently
+	    a result contained the same sequence of digits; it just
+	    began at a different position.  Here is a simple example
+	    to illustrate:
+<b>
+		1  2  8  2  0  5	 2  0  5  1  2  8
+		<u>           ×   4</u>	 <u>           ×   4</u>
+		5  1  2  8  2  0	 8  2  0  5  1  2 
+</b>
+	   So, the "shifted-8" case was considered redundant for my
+	   purposes, and was not included in the table.  This should
+	   make it clear why there are fewer integers listed than are
+	   possible, i.e. the others are merely "embedded" in those given.
+
+      3)  There were only a few cases where this embedded aspect did
+	  not account for instances in which the shifted-digit was less
+	  than the multiplier.  This happened only when "8" and "9"
+	  were the multipliers, occurring three times and once,
+	  respectively.  It is in such situations for all multipliers
+	  that a "leading zero" must be appended to the front of the
+	  large factor.  The reason for this becomes obvious when it
+	  is pointed out that no positive integer times another can be
+	  less than the former one (whether or not there is a "carry").
+	  In view of the way it makes things more uniform and regular,
+	  the use of the leading zero is not too great a liberty to
+	  take with standard notation., one thing is clear at this
+	  point: it preserves the equal length property of the integers,
+	  a fact that will become more apparent later.
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since further structure and pattern considerations for the integers in Table 1 will actually be covered in the discussion of the recurrent operation, we should now turn our attention to that topic.
+
+<hr width=50%>
+<b><h4>The Recurrent Operation</h4></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While carrying out this iterative process, the tedium of writing the work in the customary manner made me aware that the digits of the product were of little use to me.  So I ceased to write them at all.  Then I noted that the same information could be conveyed by a vertical
+method.  Figure 2 shows how this would be done for the "7-over-4" example discussed earlier.
+<pre><b>
+	  3  3  1  3  2        3  3  1  3  2
+	  1  7  9  4  8  7     1  7  9  4  8  7         /<u>×4</u>/
+	  <u>           ×   4</u>     <u>           ×   4</u>	          7
+	  7  1  7  9  4  8				 28
+						         34
+							 19
+                (a)                   (b)    	         37
+							 31
+							 (7)
+
+							 (c)
+				Figure 2
+</b></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recurrent operation algorithm then emerges in the 2c part, by observing these steps:
+<p>
+<ol>
+<li>Two digits are selected; one is the constant multiplier, the other is the first term of our cycle.
+<li>Their product is the second term of the cycle.
+<li>The next term, and all succeeding terms, is the product of the constant multiplier and the unit's digit of the preceding term, increased by the ten's digit (if any).
+</ol>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This can be summarized by the recursive formula:
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let <i>k</i> and <i>a<sub>1</sub></i> be the constant and first-term digits, respectively.  Then,
+<pre><b>
+			<i>a<sub>2</sub></i> = <i>ka<sub>1</sub></i> , and
+			<i>a<sub>n</sub></i> = <i>ku</i> + <i>t</i> , where <i>a<sub>n-1</sub></i> = 10<i>t</i> + <i>u</i>.
+</b></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table 2 was prepared by using this compact vertical format.  Reading the unit's digits from the bottom up produces the special integers given in Table 1.  Table 3 (further below)is a summary of the
+patterns that can be found in Table 2.
+
+<p>
+<center><img src="bfchart.jpg"></center>
+<p>
+<hr width=50%>
+<p>
+<h4><b>Discussion of Table 3</b></h4>
+<p>
+<center>
+<table width=95% border=2 cellpadding=5 bgcolor="#FFCC66">
+<tr>
+<td colspan=5 align=center><font face="arial"><b>Table 3.</b></font></td>
+</tr>
+
+<tr align=center>
+<td width=15%><font face="arial"><b>Factor</b></font></td>
+<td width=20%><font face="arial"><b>No. of primary cycles</b></font></td>
+<td width=20%><font face="arial"><b>Cycle Period</b></font></td>
+<td width=20%><font face="arial"><b>Max. Integer</b></font></td>
+<td width=25%><font face="arial"><b>Omissions from<br> primary cycles</b></font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>2</font></td>
+<td><font face="comic sans ms" size=2>1</font></td>
+<td><font face="comic sans ms" size=2>18</font></td>
+<td><font face="comic sans ms" size=2>18</font></td>
+<td><font face="comic sans ms" size=2>none</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>3</font></td>
+<td><font face="comic sans ms" size=2>1</font></td>
+<td><font face="comic sans ms" size=2>28</font></td>
+<td><font face="comic sans ms" size=2>28</font></td>
+<td><font face="comic sans ms" size=2>none</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>4</font></td>
+<td><font face="comic sans ms" size=2>5</font></td>
+<td><font face="comic sans ms" size=2>6</font></td>
+<td><font face="comic sans ms" size=2>37</font></td>
+<td><font face="comic sans ms" size=2>13, 14, 17, 23,<br> 25, 29, 35</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>5</font></td>
+<td><font face="comic sans ms" size=2>2</font></td>
+<td><font face="comic sans ms" size=2>42 & 6</font></td>
+<td><font face="comic sans ms" size=2>48</font></td>
+<td><font face="comic sans ms" size=2>none</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>6</font></td>
+<td><font face="comic sans ms" size=2>1</font></td>
+<td><font face="comic sans ms" size=2>58</font></td>
+<td><font face="comic sans ms" size=2>58</font></td>
+<td><font face="comic sans ms" size=2>none</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>7</font></td>
+<td><font face="comic sans ms" size=2>3</font></td>
+<td><font face="comic sans ms" size=2>22</font></td>
+<td><font face="comic sans ms" size=2>68</font></td>
+<td><font face="comic sans ms" size=2>23 & 26</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>8</font></td>
+<td><font face="comic sans ms" size=2>5</font></td>
+<td><font face="comic sans ms" size=2>13</font></td>
+<td><font face="comic sans ms" size=2>77</font></td>
+<td><font face="comic sans ms" size=2>12, 14, 15, 17, 27, 33,<br> 
+41, 57, 58, 61, 69, 71</font></td>
+</tr>
+
+<tr align=center>
+<td><font face="comic sans ms" size=2>9</font></td>
+<td><font face="comic sans ms" size=2>2</font></td>
+<td><font face="comic sans ms" size=2>44</font></td>
+<td><font face="comic sans ms" size=2>88</font></td>
+<td><font face="comic sans ms" size=2>none</font></td>
+</tr>
+
+</table>
+</center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This summary table reveals several intriguing properties for the cycles in Table 2.  The first thing to note is that the multipliers 2, 3, and 6 each produce but a single primary cycle, whereas the remaining factors yield 2 or more cycles apiece.  Turning to the multi-cycle cases, we see that all except the factor "5" had cycles of equal periods.  The
+term "max. integer" simply refers to the largest integer that appeared in the normal production of the primary cycle for the factor.  For the factors 2, 3, 6,  and 9, it is relevant to note that the product of the cycle period and the number of cycles is equal to the "max. integer".  This shows that there are no "omissions" in the range of 1 to that largest integer.  The factor of 5 also qualifies here by merely adding the two values for its cycle periods.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the factors 4, 7 and 8 present the most interesting facets so far.  Number 7 has the fewest omissions, so let's examine
+them first.  Applying the R.O. algorithm. It so happens that each integer (23 and 46) yields itself immediately.  In line with current terminology in such cases, I call such integers "self-generators".
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testing the values in the omissions list for "8" shows that none of them are self-generators.  However, all but one of them (i.e.
+69) generate another entry in the list.  Yet 69 itself generates an interesting value nonetheless: "78", which is one greater than the max. integer.  So, if we temporarily include 78, we can construct a "secondary" cycle, namely,
+<p>
+<center><b>12 -- 17 -- 57 -- 61 -- 14 -- 33 -- 27 -- 58 -- 69 -- (78) -- 71 --   15 -- 41;  (and 41 returns to 12).</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This augmented cycle now has 13 terms, just like the primary ones!
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we look at the case for "4".  That set has two self-generators (13 and 26).  (At this point we can note a common property shared by our two pairs of self-generators: namely, the smaller one is
+half the larger.)  As we did for the 8-case above, another secondary cycle can be formed by using the remaining values.  This time we must also temporarily include the integer that is one greater than the max. integer.  This last cycle is
+<p>
+<center><b>14  -- 17  -- 29  -- (38) -- 35 -- 23 -- 14.</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the equal-period property is preserved!
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, upon glancing back to Table 3, we can appreciate the full significance of the max. integer column by noting that only the "4" and "8" cases had a largest entry ending in a "7"; and only those two
+yielded secondary cycles that necessitated the restoration of the "missing link", so to speak.  With the inclusion of those two missing links, everything "ends with an 8".
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That strange finding naturally raises the question: "What about all those values that immediately follow those 8-enders, namely, 19, 29, 39, ... , 89?"  Well, oddly enough they all turn out to be self-generators for their respective single-digit factors!  And this fact extends beyond the table, and is easily proved as follows:
+<p>
+<center><b>[10(<i>n</i> - 1) + 9]<i><sub>n</sub></i> = 9<i>n</i> + (<i>n</i> - 1) = 10<i>n</i> - 1.</b></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(The final expression is the same as what is inside the brackets.)
+<p>
+<hr width=50%>
+<h4><b>Conclusion</b></h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This brings me to the end of my discussion into this puzzle, except for two closing comments and a challenge.  The systematic manner in which the data was gathered proves that the contributor of the
+original puzzle could not have presented a shorter integer than one with 18 digits.  The cycle periods given herein are all minimums.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, it is very easy to see that all the integers (no matter how large), under this R.O. procedure reduce to only the cycles or self-generators given in this paper.  This is a factor that parallels
+the well-known R.O. procedure concerning the sums of the squares of the digits of all integers (see the Steinhaus or Trigg references).  [Also click on <a href="sumsqdij.html">Happy & Dizzy Numbers</a> for more information in this website.]
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, a challenge to the reader.  What patterns, and periods, and other phenomena occur when integers in other bases are put through this new recurrent operation?  Try them, and see for yourself!
+<p>
+<hr width=50%>
+<p>
+References
+<p>
+<ol>
+<li>Steinhaus, Hugo. One Hundred Problems in Elementary Mathematics.  New York: Basic Books, 1964, pp. 11-12, 55-58.
+<p>
+<li>Trigg, Charles W.  "A Close Look at 37," Journal of Recreational    Mathematics, 2(2), April 1969, pp.117-128.
+</ol>
+<p>
+[Published in <i>The Oregon Mathematics Teacher</i>, Feb. 1978, pp. 22-27.]
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

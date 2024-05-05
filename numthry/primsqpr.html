@@ -1,0 +1,220 @@
+<HTML>
+<HEAD><TITLE>Primes and Square Pairs</TITLE></HEAD>
+<BODY bgcolor="#FAFAD2">
+
+<TABLE WIDTH=100%>
+
+<TR>
+<TD WIDTH=25% align=right><img src="kalides.gif"></TD>
+<TD WIDTH=75%><CENTER><B><font face="arial" size=6>Primes<br><font size=4>and<br><font size=6>Square Pairs</font></B></CENTER></TD>
+
+</TR>
+
+</TABLE>
+<hr noshade>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Preface: This math activity is meant to be done slowly, and in parts, so as not to reveal the "secrets" too soon.  And, though there is an answer section at the end, you are encouraged to "work things out first" so you will gain full advantage of the concept.]
+<p>
+<hr noshade>
+<p>
+<b><h2><center>Part I</center></h2></b>
+<pre>
+	Here is an interesting idea that uses primes and squares!
+
+	Notice that the prime 13 is equal         13 = 4 + 9
+    to the sum of two squares, 4 and 9.
+    The same is true for the prime 37;            37 = 1 + 36
+    the necessary squares are 1 and 36.
+
+<b>Problem #1</b>:	Make a list of all the primes from 5 to 149.
+		(There are only 33 of them.)  Then find pairs
+		of squares that make sums for as many of the
+		primes as you can.
+
+  [HINT:  Some primes do not have any answers.  So don't worry
+	  if you can't find one for every case.]
+
+<hr width=75%>
+
+	If you did you work correctly, you should have solutions for
+16 primes.  (Check this fact before reading on.)
+
+<hr width=75%>
+
+	Now you have two sets of primes.  One set is expressable as
+the sum of a pair of squares -- let's call it set <b><i>S</i></b>.  The others are
+not so expressable -- let's call it set <b><i>N</i></b>.
+
+<b>Problem #2</b>:	Choose one prime from <b><i>S</i></b> and one prime from <b><i>N</i></b>.
+		Add them.
+		Divide by 4.
+		What is your remainder?
+
+	Repeat this procedure 4 or 5 more times.
+	What conclusion do you think you can make?
+
+<hr width=75%>
+
+	The result for #2 may be summarized in these words: <b>Since the
+remainder is <u>always</u> 0, each <b><i>S</i></b>-<b><i>N</i></b> pair-sum is a multiple of four</b>.
+
+<b>Problem #3</b>:	To see why this is so, choose various primes
+		from only one set at a time and divide by 4.
+		Look at the remainders now.
+
+<hr width=50%>
+
+	The remainders for primes in set <b><i>S</i></b> are ALWAYS <font color="#FF0000">1</font>.
+	The remainders for primes in set <b><i>N</i></b> are ALWAYS <font color="#0000FF">3</font>.
+	And the sum of <font color="#FF0000">1</font> and <font color="#0000FF">3</font> is <font color="#FF00FF">4</font>.
+
+	Simple algebra shows us why this works out so nicely.
+
+	The primes in <b><i>S</i></b> all have the form of <font color="#FF0000">4x + 1</font>, while those in <b><i>N</i></b>
+all have the form <font color="#0000FF">4y + 3</font>.
+	If we add these two expressions, we see
+
+		(<font color="#FF0000">4x + 1</font>) + (<font color="#0000FF">4y + 3</font>) = <font color="#FF00FF">4</font>x + <font color="#FF00FF">4</font>y + <font color="#FF00FF">4</font>
+				    = <font color="#FF00FF">4</font>(x + y + 1).
+
+	The final step is algebra-talk for <b>"All sums are multiples
+of 4."</b>
+
+
+<hr noshade>
+<b><h2><center>Part II</center></h2></b>
+	Let's choose two primes from set <b><i>S</i></b>, for example 5 and 13.  Their
+product is 5 × 13 = 65.
+
+	<b>Observe</b>:    65	=   1 + 65  =  1<sup>2</sup> + 8<sup>2</sup>
+
+			=  16 + 49  =  4<sup>2</sup> + 7<sup>2</sup>
+
+	Recall that in Part I we saw that each prime in set <b><i>S</i></b> only had 
+one pair of squares.  But, this time, there are two ways to write the
+product number as the sum of a pair of squares.  Nice, wouldn't you say?
+
+<b>Problem #4</b>:	Prove that this is true for these products.
+
+	(1)   5 x 17		(2)   5 x 29	      (3)   5 x 41
+
+	(4)   5 x 61		(5)   13 x 17
+
+<hr width=75%>
+
+	What do you think might happen if we choose three primes from
+set <b><i>S</i></b>?  Let's use 3, 13, and 17.  Their product is 5 × 13 × 17 = 1105.
+
+   <b>Observe</b>:	1105  =  16  +  1089  =  4<sup>2</sup> + 33<sup>2</sup>
+
+		One square pair is given.  You should be able to 
+		find three more, making <u>four</u> pairs in all!
+
+<b>Problem #5</b>:	Now here is a real challenge!  Try the same thing
+		with 13, 17, and 29.
+
+		First, find their product.
+
+		Then, find <u>four</u> square pairs.
+
+<hr noshade>
+<hr noshade>
+</pre>
+
+<h3>Teacher's Guide & Solutions</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This lesson is based on a well-know fact from number theory: All primes of the form "4n + 1" can be uniquely expressed as the sum of two squares.  The remaining primes (of the form "4n + 3") cannot be so expressed.
+<p><blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The main objectives are the following:
+<p><ol>
+<li><font face="arial">Increased familiarity with primes and squares.
+<p>
+<li>Practice in using a table of values (primes and squares).
+<p>
+<li>Experience in systematic search procedures, to exhaust all possibilities to solve a problem.
+<p>
+<li>Practice in writing solutions in the "N = a + b" form.
+<p>
+<li>Use of exponents.
+<p>
+<li>Simple drill in the subtraction of whole numbers.</font>
+</ol>
+</blockquote>
+<p>
+<hr width=50%>
+<pre>
+<b><center>Solutions</center></b>
+ <u>#1</u>:
+
+   5 = 1 +  4    37 =  1 + 36     73 =  9 +  64     109 =  9 + 100
+  13 = 4 +  9    41 = 16 + 25     89 = 25 +  64     113 = 49 +  64
+  17 = 1 + 16    53 =  4 + 49     97 = 16 +  81     137 = 16 + 121
+  29 = 4 + 25    61 = 25 + 36    101 =  1 + 100     149 = 49 + 100
+
+ <u>#4</u>:
+
+  (1)  85 =  4 + 81 = 2<sup>2</sup> + 9<sup>2</sup>	   (2)  145 =  1 + 144 = 1<sup>2</sup> + 12<sup>2</sup>
+	  = 36 + 49 = 6<sup>2</sup> + 7<sup>2</sup>		    = 64 +  81 = 8<sup>2</sup> + 9<sup>2</sup>
+
+  (3) 205 =  9 + 196 = 3<sup>2</sup> + 14<sup>2</sup>    (4) 305 = 16 + 289 = 4<sup>2</sup> + 17<sup>2</sup>
+	  = 36 + 169 = 6<sup>2</sup> + 13<sup>2</sup>		   = 49 + 256 = 7<sup>2</sup> + 16<sup>2</sup>
+
+  (5) 221 =  25 + 196 =  5<sup>2</sup> + 14<sup>2</sup>
+	  = 100 + 121 = 10<sup>2</sup> + 11<sup>2</sup>
+
+
+  <u>#5</u>:  (Ex.)  1105 =  81 + 1024 =  9<sup>2</sup> + 32<sup>2</sup>
+		   = 144 +  961 = 12<sup>2</sup> + 31<sup>2</sup>
+	   	   = 529 +  576 = 23<sup>2</sup> + 24<sup>2</sup>
+
+	      6409 =    9 + 6400 =  3<sup>2</sup> + 80<sup>2</sup>
+	 	   =  784 + 5625 = 28<sup>2</sup> + 75<sup>2</sup>
+		   = 1225 + 5184 = 35<sup>2</sup> + 72<sup>2</sup>
+		   = 2809 + 3600 = 53<sup>2</sup> + 60<sup>2</sup>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regarding #4 and #5, it should be pointed out to the student that the search for solutions will be more efficient and less time-
+consuming if one begins by subtracting the largest square that does not exceed the given product and proceeds to progressively smaller squares.  Also, once a square to be selected is smaller than one-half the number, one has "gone too far".  If all possible solutions have not been found by this time (the number of solutions depending on the case being considered), one has made a simple error earlier and should retrace his steps.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, Part II does in no way exhaust all possible extensions for the interested student.  For example, if the product of 4 distinct primes from set <b><i>S</i></b> is used, the number of square pairs increases to six.  For each additional distinct prime that is used to form a product, two more square pairs become possible.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The situation is somewhat more complicated if there is a repetition of set-<b><i>S</i></b> primes, or if primes of set <b><i>N</i></b> are used.  In any event, if <u>only</u> set-<b><i>N</i></b> primes are used, no square pairs are possible.  Capable students may be encouraged to investigate this curious fact.
+<p>
+[This information is taken from H. E. Dudeney's <u>Amusements in Mathematics</u>, pp. 165-166.]
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, the following items may be used as an evaluative "pop quiz" by the classroom teacher, for Part II, #4 & #5.
+<p><pre>
+  (1) 5 × 37    (2) 5 × 53     (3) 5 × 73    (4) 13 × 29
+
+  (5) 13 × 37   (6) 5 × 13 × 29
+
+<u>Solutions</u>:
+
+  (1) 185 = 16 + 169 = 4<sup>2</sup> + 13<sup>2</sup>		(2)  265 =   9 + 256 =  3<sup>2</sup> + 16<sup>2</sup>
+	  = 64 + 121 = 8<sup>2</sup> + 11<sup>2</sup>			 = 121 + 144 = 11<sup>2</sup> + 12<sup>2</sup>
+
+  (3) 365 =   4 + 361 =  2<sup>2</sup> + 19<sup>2</sup>	(4)  377 =  16 + 361 =  4<sup>2</sup> + 19<sup>2</sup>
+	  = 169 + 196 = 13<sup>2</sup> + 14<sup>2</sup>		 = 121 + 256 = 11<sup>2</sup> + 16<sup>2</sup>
+
+  (5) 481 =  81 + 400 =  9<sup>2</sup> + 20<sup>2</sup>	(6) 1885 =  36 + 1849 =  6<sup>2</sup> + 43<sup>2</sup>
+	  = 225 + 256 = 15<sup>2</sup> + 16<sup>2</sup>		 = 121 + 1764 = 11<sup>2</sup> + 42<sup>2</sup>
+						 = 441 + 1444 = 21<sup>2</sup> + 38<sup>2</sup>
+						 = 729 + 1156 = 27<sup>2</sup> + 34<sup>2</sup>
+
+tt(8/10/82)
+
+---------
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Footnote:  This activity was created by me at a time when calculators were not as common in the math class as they are now, and computers were virtually unheard of in a school.  So some of the work presented
+above can and should be adapted to fit the current mode of teaching math. 
+<p>
+ tt(7/3/98)
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

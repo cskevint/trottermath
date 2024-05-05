@@ -1,0 +1,315 @@
+<HTML>
+<HEAD><TITLE>Ruth-Aaron Numbers</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="FFCC99">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="33CCFF"><img src="BabeRuth.gif"></TD>
+<TD WIDTH=80% bgcolor="FF0099"><CENTER><B><font face="arial" size=7>Ruth-Aaron Numbers</font></B></CENTER></TD>
+<TD WIDTH=20% align=center bgcolor="33CCFF"><img src="Aaronhit.gif"></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<p>
+     On April 8, 1974 when Hank Aaron surpassed the career home run
+record of 714 set by the immortal Babe Ruth by hitting his own 715<sup>th</sup>
+homer, mathematicians found yet another reason to cheer.  You see, if
+we prime factorize these two numbers, we have the following:
+<p>
+
+<center><font size=4><font color="#0000FF"><b>714 = 2 × 3 × 7 × 17</b></font>   and    <b><font color="#0000FF">715 = 5 × 11 × 13</font></b>.</font></center>
+<p>
+     Now a quick examination reveals a unique property: the first 
+seven primes, and only those, are used!  That certainly wouldn't happen
+very often, would it?  But a deeper look produces another relationship:
+<b><font size=4>the sums of the primes for each number are the same!</font></b>
+<p>
+<center><b><font size=4><font color="#FF0000">29 = 2 + 3 + 7 + 17</font> 
+<p>
+and
+<p>
+<font color="#FF0000">29 = 5 + 11 + 13</font></font></b></center>
+<p>
+     Surprising or spooky, take your pick.  But if you are a true
+number lover, you should be asking yourself this question: "Are there
+other pairs of consecutive numbers that behave in this way?"  According
+to Paul Hoffman's book, "The Man Who Loved Only Numbers: The Story of
+Paul Erdös and the Search for Mathematical Truth"[1], <a href="ruth714.html">Carl Pomerance</a> did.
+And the answer was in the affirmative.  However, as might be suspected,
+such <i><b>Ruth-Aaron pairs</b></i>, as they can be called, appear somewhat infrequently.
+He did a computer search of all the positive integers less than 20,000 and
+found only 26 pairs.  The smallest pair is <b>5</b> and <b>6</b>; the largest, <b>18,490</b>
+and <b>18491</b>. [<a href="ruth714.html">2</a>]
+<p>
+     Then, in the tradition of all good number theorists, he
+conjectured (but did not prove) that the number of such pairs was
+infinite.  That is where <a href="erdos.html">Paul Erdös</a> entered the picture, setting to
+rest the dilemma; again the answer was in the affirmative.
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+     Where do we go from here?  Is this just a little tidbit of
+mathematical whimsy, or can it be turned into something worthwhile,
+at least for students and teachers of school math?  We believe it
+can, and here is how we do it.
+<p>
+     Initially, the students must have a working background of two
+ideas: <b>prime numbers</b> and the <b>prime factorization</b> of numbers.  Once
+that is established, the students can be presented with the topic of
+Ruth-Aaron numbers, starting off with the story about the home run
+records of the two famous baseball greats.  This is followed up with
+mention of what Pomerance did to search for more instances.  We usually
+tell the class that 5 and 6 is the smallest pair, showing why it is so.  
+Then we suggest they start looking for more pairs themselves.  At first,
+shock sets in; they don't quite know what to make of it.  It's a good
+idea to assure them that the next two pairs are rather small.
+<p>
+     After they have been found -- <b>(8, 9)</b> and <b>(15, 16)</b> -- we go for
+the really big show and give them the largest pair in Pomerance's search,
+asking them to prove that it is in fact an <i>R-A</i> pair.  With calculators at
+hand and basic knowledge of the divisibility tests normally taught in
+middle school math, the request is a reasonable one.  All the primes
+necessary for the task are less than 50 and the sum of the prime sets
+is less than 100.  'Nuff said.
+<p>
+<center><img src="search1.gif"></center>
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+     Ted Alper, of the Education Program for Gifted Youth at Stanford
+University, has provided us with the complete list of <i>R-A</i> pairs for numbers
+less than 1,000,000. [3] By his count, there are 149 such pairs.  Therefore,
+we can do many additional exercises in any of three ways: (1) present a
+specific pair and ask that it be proved by showing the prime factorizations
+and the equal sums; or (2) present a set of four or five number pairs (only
+some of which are legitimate cases) and say, "Which pairs given here are
+indeed <i>R-A</i>  numbers?", or (3) state that an <i>R-A</i> pair exists in a certain
+small range of numbers, say a decade, then ask the students to find which
+pair of consecutive numbers is the one we seek.  An example of the last
+approach might be: <b>find the <i>R-A</i> pair hidden in the range of
+numbers from 5400 to 5410.</b>
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+     But why let a good thing stop there?  A good mathematician,
+like a good musician or artist, is always creating new variations on
+a basic theme.  Here is one such variation among other possibilities:
+find a pair of consecutive numbers for which their RAV's [i.e. Ruth-Aaron
+Value, or sum of the primes] are themselves <i>consecutive</i>.  A simple example
+of this is 24 and 25.  The RAV(24) = 2 + 2 + 2 + 3 = 9 and RAV(25) = 5 + 5
+= 10.  Many such pairs of this type exist, of course.  According to Alper,
+there are 55 such pairs less than 100,000.  But, there is a catch here.
+Those pairs are what we call "Type <i>i</i>", where "<i>i</i>" is for "increasing".
+This can easily be expressed using "function notation", as follows:
+<p>
+<center><font size=4><font color="990066">RAV(<i>n</i>) + 1 = RAV(<i>n</i>+1)</font></font></center>
+<p>
+This implies there must be a second category, "Type <i>d</i>", where "<i>d</i>" is for
+"decreasing".  The pair of 14 and 15 serves as a simple illustration;
+RAV(14) = 9 and RAV(15) = 8.  Again using functions,  we have
+<p>
+<center><font size=4><font color="990066">RAV(<i>n</i>) - 1 = RAV(<i>n</i>+1)</font></font></center>
+<p>
+Once again, Alper's computer reveals that there are 51 such pairs less
+than 100,000 in this category. [4]
+<p>
+     We believe the use of function notation provides a unique way
+to present this topic in an advanced math manner.  And therefore justify
+its inclusion in school math lessons.  It provides a new challenge to
+the students while preparing them for their future study of functions
+in algebra and beyond.
+<p>
+	Additional ideas for investigation include the following:
+<p>
+(1)  Do there exist pairs of consecutive numbers for which for some
+     positive integer <i>k</i> > 1,
+<p>
+<center><font size=4><font color="9900CC">RAV(<i>n</i>) = <i>k</i>RAV(<i>n</i>+1)</font></font>
+or
+<font size=4><font color="9900CC">RAV(<i>n</i>) = (1/<i>k</i>)RAV(<i>n</i>+1)</font></font>?</center>
+<p>
+[Put in middle school math terms, this merely says: "<i>The RAV of one
+number is a multiple of the RAV of the other number.</i>"] The answer is
+yes, as might be expected.  There are 43 such pairs in the range of
+numbers less than 2000.  And for the record, 222 pairs less than 20,000;
+630 pairs less than 100,000; and 2927 pairs less than 1,000,000. [4]
+<p>
+(2) Do there exist numbers <i>n</i> such that <i>n</i> = <i>k</i>RAV(<i>n</i>) for some positive 
+    integer <i>k</i> > 1?  This means the RAV of a number is a factor (or divisor) 
+    of the given number.  An example: RAV(60) = 15 and 15 is a factor
+    of 60.  [Note: this is a trivial case when <i>n</i> is prime, because
+    RAV(<i>n</i>) = <i>n</i>.  So non-prime values of <i>n</i> are what we are seeking here.]
+<p>
+(3) Take a number and double it.  Notice that the RAV of the doubled
+    number is only 2 more than the RAV of the first number.  Can you
+    explain this?  For example the RAV(12) = 7, but the double of 12
+    is 24 and the RAV(24) = 9, which is only 2 more.
+<p>
+(4) Observe that RAV(291) = 100, the "century" number.  It is the
+    smallest number with this property.  What is the next largest
+    number whose RAV is 100?
+<p>
+(5) Define a recursive relationship on the set of whole numbers as
+    follows: For a given <i>n</i>, find RAV(<i>n</i>).  Then find the RAV of that
+    result.  Continue this process of finding the RAV of each succeeding
+    outcome, until...  Well, what do you think will happen?  We call this
+    the longevity of the original number <i>n</i>.
+<p><pre>
+An example is 91.  RAV(91) = 20.
+                         RAV(20) = 9.
+                               RAV(9) = 6.
+                                    RAV(6) = 5.
+                                         RAV(5) = 5  DEAD-END!
+</pre><p>
+The process terminates with 5, because 5 is a prime.
+<p>
+This means 91 --> 20 --> 9 --> 6 --> 5.  Therefore, the longevity of
+91 is 4.  [We might symbolize this by writing RAV<sup>4</sup>(91) = 5 and 
+L(91) = 4.]
+<p>
+Numbers can now be categorized by (1) their longevity numbers, or
+(2) according to which primes they eventually arrive.  [For a more
+in-depth discussion of this feature, see [5].]
+<p>
+
+	It seems that the possible avenues for investigation are almost
+endless, or at least, certainly  varied enough to encourage individual
+creativity by anyone willing to try something new.
+<p>
+<center><h3>References</h3></center>
+<p>
+[1] Hoffman, Paul.  "The Man Who Loved Only Numbers: The Story of Paul
+Erdös and the Search for Mathematical Truth". Hyperion: New York.  1998.
+<p>
+[2] <a href="ruth714.html">Nelson, Carol, David E. Penney, and Carl Pomerance, "714 AND 715". 
+Journal of Recreational Mathematics, Vol. 7, No. 2 (1974), p. 87-89.</a>
+<p>
+[3] Alper, Ted.  E-mail, May 29, 1999.
+<p>
+[4] Alper, Ted.  E-mail, June 10, 1999.
+<p>
+[5] Dane, Perry, "The 'Prime Derivative'", Journal of Recreational
+Mathematics, Vol. 7, No. 2 (1974), p. 111-115.
+<p>
+<center><h3>NOTES</h3></center>
+<p>
+For a different slant on home runs in baseball with mathematics, go to
+Mike Keith's site on <a href="http://users.aol.com/s6sj7gt/maris.htm">Maris-McGwire-Sosa Numbers</a>.
+<p>
+For a discussion of Ruth-Aaron <b>Triplets</b> in The Prime Puzzles and Problems Connection, click <a href="http://www.primepuzzles.net/puzzles/puzz_173.htm"> HERE</a>.
+<p>
+For more useful information about generating RA Pairs, go to <a href="http://www.spacefire.com/NumberTheory/default.asp?SubPage=RuthAaron.htm">Joe K. Crump's Number Theory Web</a>.
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<center><h3>APPENDICES</h3></center>
+<p>
+<h4>Below are given the lists of the first ten cases for various categories as mentioned 
+in the article.  To see longer lists, click <a href="ravdata.html">here</a>.</h4>
+<p>
+1.  The first ten cases of regular <i>R-A</i> pairs:
+<p><pre>
+Pair 1: (5,6) with sum 5.
+Pair 2: (8,9) with sum 6.
+Pair 3: (15,16) with sum 8.
+Pair 4: (77,78) with sum 18.
+Pair 5: (125,126) with sum 15.
+Pair 6: (714,715) with sum 29.
+Pair 7: (948,949) with sum 86.
+Pair 8: (1330,1331) with sum 33.
+Pair 9: (1520,1521) with sum 32.
+Pair 10: (1862,1863) with sum 35.</pre>
+<p>
+--------------------------------------
+<p>
+2. Alper also considered the variation on the basic theme of merely
+   finding consecutive pairs for which sums of the <b>distinct</b> primes
+   in each prime factorization were used.  Here are the first cases:
+<p><pre>
+Pair 1: (5,6) with sum 5.
+Pair 2: (24,25) with sum 5.
+Pair 3: (49,50) with sum 7.
+Pair 4: (77,78) with sum 18.
+Pair 5: (104,105) with sum 15.
+Pair 6: (153,154) with sum 20.
+Pair 7: (369,370) with sum 44.
+Pair 8: (492,493) with sum 46.
+Pair 9: (714,715) with sum 29.
+Pair 10: (1682,1683) with sum 31.</pre>
+<p>
+---------------------------
+<p>
+3.  This list is for "Type <i>i</i>" pairs as explained in the
+    article.
+<p><pre>
+Pair 1: (2,3) with first sum 2.
+Pair 2: (3,4) with first sum 3.
+Pair 3: (4,5) with first sum 4.
+Pair 4: (9,10) with first sum 6.
+Pair 5: (20,21) with first sum 9.
+Pair 6: (24,25) with first sum 9.
+Pair 7: (98,99) with first sum 16.
+Pair 8: (170,171) with first sum 24.
+Pair 9: (1104,1105) with first sum 34.
+Pair 10: (1274,1275) with first sum 29.</pre>
+<p>
+----------------------------
+<p>
+4.  This list is for "Type <i>d</i>" pairs as explained in the
+    article.
+<p><pre>
+Pair 1: (7,8) with sums (7,6).
+Pair 2: (14,15) with sums (9,8).
+Pair 3: (63,64) with sums (13,12).
+Pair 4: (80,81) with sums (13,12).
+Pair 5: (224,225) with sums (17,16).
+Pair 6: (285,286) with sums (27,26).
+Pair 7: (351,352) with sums (22,21).
+Pair 8: (363,364) with sums (25,24).
+Pair 9: (475,476) with sums (29,28).
+Pair 10: (860,861) with sums (52,51).</pre>
+<p>
+--------------------------
+<p>
+5.  List for RAVs in which one is a non-trivial multiple of the other.
+<p><pre>
+Pair 1: (74,75) with sums (39,13).
+Pair 2: (160,161) with sums (15,30).
+Pair 3: (174,175) with sums (34,17).
+Pair 4: (252,253) with sums (17,34).
+Pair 5: (259,260) with sums (44,22).
+Pair 6: (287,288) with sums (48,16).
+Pair 7: (335,336) with sums (72,18).
+Pair 8: (391,392) with sums (40,20).
+Pair 9: (395,396) with sums (84,21).
+Pair 10: (447,448) with sums (152,19).</pre>
+<p>
+--------------------
+<p>
+6.  List of the first cases where the RAV is a factor of the given
+    number.
+<p><pre>
+Value 1: 16 has RAV  8.
+Value 2: 27 has RAV  9.
+Value 3: 30 has RAV  10.
+Value 4: 60 has RAV  12.
+Value 5: 70 has RAV  14.
+Value 6: 72 has RAV  12.
+Value 7: 84 has RAV  14.
+Value 8: 105 has RAV  15.
+Value 9: 150 has RAV  15.
+Value 10: 180 has RAV  15.</pre>
+<p>
+<p>
+<hr noshade>
+<p>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</body>
+</html>

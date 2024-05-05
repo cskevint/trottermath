@@ -1,0 +1,215 @@
+<HTML>
+<HEAD><TITLE>Multiplying with Squares</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="#FFE4C4">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="FF000F"><img src="boyface.gif"></TD>
+<TD WIDTH=60% bgcolor="FFFFFF"><CENTER><B><font face="arial" size=6><center>MULTIPLICATION<br>with<br>SQUARES</center></font></B></CENTER></TD>
+<TD WIDTH=40% align=center bgcolor="#008000"><img src="girlface.gif"></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<p><font face="comic sans ms" size=4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In another article (<a href="3mgame.html">The "3M" Game</a>) I showed you how that by the use of a special table of values (the Triangular Numbers), you could multiply two numbers by just adding and subtracting numbers appropriately
+chosen from that table.  If you haven't read that one yet, you can go there by clicking <a href="3mgame.html">here</a>.  Don't forget to come back though!
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This time we will do much the same thing, that is, multiply two numbers without using the regular multiplication algorithm.  Of course, as mentioned, we will need a table to do this work.  This time it is a simple table of the <b>square numbers</b>.  There has been much mention in my website about square numbers, so I will assume you know what that means.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below there will be a table of squares of the numbers from <b>1</b> to <b>100</b> for your convenience in understanding this lesson.  Many textbooks, especially older books, often carry tables such as this one; also they have tables of square roots, cubes, and cube roots, plus tables necessary for trigonometry.  That's because in the <b>B.C.</b> years -- <b><u>B</u></b>efore <b><u>C</u></b>alculators -- we needed some help along this line to speed things up.
+<p>
+<hr width=50%>
+<p>
+<h3><b>The "Squares" Algorithm Explained</b></h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This algorithm takes an unexpected turn for us.  We must consider two cases for our factors.  <font color="#990000">Case I</font> is when both factors are odd numbers or both are even numbers.  <font color="#FF00FF">Case II</font> is when we have one of each, an odd and an even.  Let's take <font color="#990000">Case I</font> first.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By way of explanation, I'll use the odd numbers 123 & 27.
+<p><blockquote>
+<ol>
+<li>Add the numbers: 123 + 27 = 150.<p>
+
+<li>Take half that sum: &frac12; × 150 = <font color="#FF0000">75</font><p>
+
+<li>Subtract the numbers:  123 - 27 = 96.<p>
+
+<li>Take half that difference:  &frac12; × 96 = <font color="#0000FF">48</font>.<p>
+
+<li>Look up the squares in the table of <font color="#FF0000">75</font> and <font color="#0000FF">48</font>:<p>
+
+		<font color="#FF0000">75</font><sup>2</sup> = <font color="#FF0000">5625</font>   and   <font color="#0000FF">48</font><sup>2</sup> = <font color="#0000FF">2304</font>
+<p>
+<li>Subtract the two squares found in Step 5.<p>  
+
+		<font color="#FF0000">5625</font>  -  <font color="#0000FF">2304</font>  =  <font color="#008000">3321</font>
+</ol></blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That's your product for <font color="#008000">123 × 27</font>!  (Really.)
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For <font color="#FF00FF">Case II</font>, let's use these numbers: 38 & 145.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will do a little algebra "trick" here before proceeding to do the algorithm described above.  We mentally convert 38 to the form of (37 + 1).  Now using the <b><i>distributive property</i></b>, we have
+<p>
+<b><center>(37 + 1) × 145  =  <font color="#FF0000">37 × 145</font>  +  145</center></b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By this means we have converted our problem back to the product of two <b><font color="#FF0000">odd</font></b> numbers, plus another number.  Something new from something old!
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of course, we could have done it differently if we had rewritten the 145 as (144 + 1).  This would give us:
+<p>
+<b><center>38 × (144 + 1)  =  <font color="#0000FF">38 × 144</font>  +  38</center></b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This time we merely have to perform the algorithm with two <b><font color="#0000FF">even</font></b> numbers, then add another number to their product.
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+<p>
+<h3><b>Rationale</b></h3>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now I can hear you saying, "Gee, that was a lot of work just to multiply two numbers!" and "Hey, weren't you really multiplying
+after all in Steps 2, 4 & 5?"
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To which I say, "Well, yes and no."  In Steps 2 & 4, we were perhaps multiplying a little, but we could also say that we were <u>dividing</u> by 2, something many people can do mentally with very little effort. (On another page I show you something called <a href="../simpleops/russmult.html">Russian Peasant Multiplication</a> which uses this idea.)  So the ease of this operation justifies its usage.   In Step 5, all the multiplication to get the squares has been done earlier and by "experts"; all you do is just select the numbers from the table.  So you didn't really multiply here either.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The value of this activity is the same, practically speaking, as that of the 3M Game; so see the reasons given there, if you wish.  Plus it is fun sometimes just to do regular things in a different way.
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+<p>
+<b>Extension Activity</b>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For students who are, or have been, in Algebra I, it would be a good challenge to prove why the algorithm works all the time.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HINT: Let <font color="#FF0000">a</font> = one factor and <font color="#0000FF">b</font> = the other factor.  Then       proceed in a logical, algebraic way.]
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=2></center>
+<p>
+<center>
+<table border=2 cellpadding=10>
+
+<tr>
+<td colspan=8><center><font face="arial" size=4>Table of Squares</font></center></td>
+</tr>
+
+<tr>
+<td align=center><font color="#FF0000">n</font></td><td align=center><font color="#0000FF">n<sup>2</sup></font></td><td align=center><font color="#FF0000">n</font></td><td align=center><font color="#0000FF">n<sup>2</sup></font></td><td align=center><font color="#FF0000">n</font></td><td align=center><font color="#0000FF">n<sup>2</sup></font></td><td align=center><font color="#FF0000">n</font></td><td align=center><font color="#0000FF">n<sup>2</sup></font></font></td>
+<tr>
+
+<tr>
+<td>1</td><td>  1</td><td>26</td><td>  676</td><td>51</td><td>2601</td><td>76</td><td>5776</td>
+<tr>
+
+<tr>
+<td>2</td><td>  4</td><td>27</td><td>  729</td><td>52</td><td>2704</td><td>77</td><td>5929</td>
+<tr>
+
+<tr>
+<td>3</td><td>  9</td><td>28</td><td>  784</td><td>53</td><td>2809</td><td>78</td><td>6084</td>
+<tr>
+
+<tr>
+<td>4</td><td>16</td><td>29</td><td>  841</td><td>54</td><td>2916</td><td>79</td><td>6241</td>
+<tr>
+
+<tr>
+<td>5</td><td>25</td><td>30</td><td>  900</td><td>55</td><td>3025</td><td>80</td><td>6400</td>
+<tr>
+
+<tr>
+<td>6</td><td>36</td><td>31</td><td>  961</td><td>56</td><td>3136</td><td>81</td><td>6561</td>
+<tr>
+
+<tr>
+<td>7</td><td>49</td><td>32</td><td>1024</td><td>57</td><td>3249</td><td>82</td><td>6724</td>
+<tr>
+
+<tr>
+<td>8</td><td>64</td><td>33</td><td>1089</td><td>58</td><td>3364</td><td>83</td><td>6889</td>
+<tr>
+
+<tr>
+<td>9</td><td>81</td><td>34</td><td>1156</td><td>59</td><td>3481</td><td>84</td><td>7056</td>
+<tr>
+
+<tr>
+<td>10</td><td>100</td><td>35</td><td>1225</td><td>60</td><td>3600</td><td>85</td><td>7225</td>
+<tr>
+
+<tr>
+<td>11</td><td>121</td><td>36</td><td>1296</td><td>61</td><td>3721</td><td>86</td><td>7396</td>
+<tr>
+
+<tr>
+<td>12</td><td>144</td><td>37</td><td>1369</td><td>62</td><td>3844</td><td>87</td><td>7569</td>
+<tr>
+
+<tr>
+<td>13</td><td>169</td><td>38</td><td>1444</td><td>63</td><td>3969</td><td>88</td><td>7744</td>
+<tr>
+
+<tr>
+<td>14</td><td>196</td><td>39</td><td>1521</td><td>64</td><td>4096</td><td>89</td><td>7921</td>
+<tr>
+
+<tr>
+<td>15</td><td>225</td><td>40</td><td>1600</td><td>65</td><td>4225</td><td>90</td><td>8100</td>
+<tr>
+
+<tr>
+<td>16</td><td>256</td><td>41</td><td>1681</td><td>66</td><td>4356</td><td>91</td><td>8281</td>
+<tr>
+
+<tr>
+<td>17</td><td>289</td><td>42</td><td>1764</td><td>67</td><td>4489</td><td>92</td><td>8464</td>
+<tr>
+
+<tr>
+<td>18</td><td>324</td><td>43</td><td>1849</td><td>68</td><td>4624</td><td>93</td><td>8649</td>
+<tr>
+
+<tr>
+<td>19</td><td>361</td><td>44</td><td>1936</td><td>69</td><td>4761</td><td>94</td><td>8836</td>
+<tr>
+
+<tr>
+<td>20</td><td>400</td><td>45</td><td>2025</td><td>70</td><td>4900</td><td>95</td><td>9025</td>
+<tr>
+
+<tr>
+<td>21</td><td>441</td><td>46</td><td>2116</td><td>71</td><td>5041</td><td>96</td><td>9216</td>
+<tr>
+
+<tr>
+<td>22</td><td>484</td><td>47</td><td>2209</td><td>72</td><td>5184</td><td>97</td><td>9409</td>
+<tr>
+
+<tr>
+<td>23</td><td>529</td><td>48</td><td>2304</td><td>73</td><td>5329</td><td>98</td><td>9604</td>
+<tr>
+
+<tr>
+<td>24</td><td>576</td><td>49</td><td>2401</td><td>74</td><td>5476</td><td>99</td><td>9801</td>
+<tr>
+
+<tr>
+<td>25</td><td>625</td><td>50</td><td>2500</td><td>75</td><td>5625</td><td>100</td><td>10,000</td>
+<tr>
+
+</table>
+</center>
+
+<hr noshade>
+</pre>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

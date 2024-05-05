@@ -1,0 +1,431 @@
+<HTML>
+<HEAD><TITLE>Repeating Decimals</TITLE></HEAD>
+
+<script language="javascript">function doit(){
+a=document.denom.places.value;
+b=document.denom.den.value;
+c=""+b;
+d=document.denom.num.value;
+repeats="";
+howlongnum=c.length;
+dividend = d*Math.pow(10,howlongnum);
+//howmanyzeros=number of leading zeros for the answer
+for(n=0;n<(howlongnum);n++){
+if(((d/b)*Math.pow(10,n))<1){howmanyzeros=n;}
+}
+for(n=0;n<howmanyzeros;n++){
+repeats=repeats+"0";
+}
+
+repeats="0."+repeats;
+for(loopy=1;loopy<=a;loopy++){
+ans=dividend/b;
+ans=Math.floor(ans);
+remains=dividend-ans*b;
+verbans=""+ans
+repeats=repeats+verbans;
+remains=remains*10;
+dividend=remains;
+}
+document.denom.worksp.value=repeats;
+}
+</script>
+
+<a name="Top">
+<BODY bgcolor="FFF000">
+
+<TABLE WIDTH=100%>
+
+<TR>
+<TD WIDTH=80% bgcolor="#00CED1"><CENTER><B><font face="arial" size=6><center>Repeating Decimal Patterns</center></font></B></CENTER></TD>
+<TD WIDTH=20% align=center bgcolor="FFF000"><img src="jackinthebox.gif"></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Many years ago I read some interesting articles in a British school mathematics journal about the various patterns that can be
+found in the decimal expansions of repeating decimal forms of certain
+rational numbers [<i>aka</i> fractions].  So I began my own investigation of
+this topic to see what I could discover on my own.  Below I will try to explain what I found.  I hope you find it interesting, too.
+<p>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<center><table Border=7 cellpadding=5 cellspacing=0 bgcolor="#00FFFF">
+<tr><td><b>7ths</b></td></tr>
+</table></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We begin with the first truly interesting case: 1/7.  When we divide 1 by 7, we obtain the following repeating decimal pattern:
+<pre>
+	 1
+	---  = 0.<font color="#0000FF">142857</font><font color="#E1423E">142857</font><font color="#008000">142857</font>...
+	 7
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The repeating group of six digits <b>142857</b> is called the <b>period</b> or <b>repetend</b> of the decimal form of the faction.  It is a nontrivial fact -- as will be seen later -- that of the ten digits, only the multiples of 3 are missing: 3, 6, 9, and 0.  [For convenience, 0 will be considered a multiple of 3 in this work.]
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As was pointed out in the page of <a href="specnum.html">Special Numbers</a>, this 6-digit period manifests some unique sums if it is separated into appropriate halves and thirds.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Separate it into two halves, and then add.
+<p><pre>
+		<font color="#0000FF">142</font><font color="#E1423E">857</font>		<font color="#0000FF">142</font>  +  <font color="#E1423E">857</font>  =  999
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next split it into thirds before adding.
+<p><pre>
+		<font color="#0000FF">14</font><font color="#E1423E">28</font><font color="#008000">57</font>		<font color="#0000FF">14</font>  +  <font color="#E1423E">28</font>  +  <font color="#008000">57</font>  =  99
+</pre><p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now we will do a "skip counting" sort of separation, or better said "look at the sum of the digits in the <font color="#0000FF">odd</font> positions vs. the sum of the digits in the <font color="#E1423E">even</font> positions."  Note:
+<p><pre>
+		<font color="#0000FF">1</font><font color="#E1423E">4</font><font color="#0000FF">2</font><font color="#E1423E">8</font><font color="#0000FF">5</font><font color="#E1423E">7</font>:		<font color="#0000FF">1</font> + <font color="#0000FF">2</font> + <font color="#0000FF">5</font> =  8
+				<font color="#E1423E">4</font> + <font color="#E1423E">8</font> + <font color="#E1423E">7</font> = 19
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing there, you say?  Perhaps so, but in this case we need to wait until we do the 13<sup>ths</sup> to see the significance of it.
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here I show something I call the "N-sequence".  N stands for numerator.  Recall that when you compute the decimal respresentations
+for the sequence of fractions -- 2/7, 3/7, ..., 6/7 -- you merely obtain the same six digit period, just beginning in a different position.  I will show it for 2/7, and you can do the others yourself.
+<p><pre>
+	 2
+	---  = 0.<font color="#0000FF">285714</font><font color="#E1423E">285714</font><font color="#008000">285714</font>...
+	 7
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Again we see a 6-digit period (<b>285714</b>) which is our original case just starting two digits later in the expansion.  If we compute the other four fractions the same phenomenon appears.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now we have a sequence of six fractions and their period numbers.  Each fraction's numerator is a number from 1 to 6, and each period has a different "initial" digit.  If we replace the digits of the basic
+period for 1/7 with the corresponding numerator digit, we can form a sequence of "numerators", hence the "N-sequence" in this fashion:
+<pre><p>
+
+		    Period:  1  4  2  8  5  7
+		Numerators:  1  3  2  6  4  5
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If we perform the "split-half addition" operation on our new sequence, we get this:
+<p><pre>
+		<font color="#0000FF">132</font><font color="#E1423E">645</font>		<font color="#0000FF">132</font>  +  <font color="#E1423E">645</font>  =  777
+</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wow!  All 7's, just what our denominators are.
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's do the odd-even "skip counting" operation again, and observe what happens this time:
+<p><pre>
+		<font color="#0000FF">1</font><font color="#E1423E">3</font><font color="#0000FF">2</font><font color="#E1423E">6</font><font color="#0000FF">4</font><font color="#E1423E">5</font>:		<font color="#0000FF">1</font> + <font color="#0000FF">2</font> + <font color="#0000FF">4</font> =  7
+				<font color="#E1423E">3</font> + <font color="#E1423E">6</font> + <font color="#E1423E">5</font> = 14
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hmmm, the sums are 7 and the <b>double</b> of 7.  That's sorta nice, if you think about it.
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<center><table Border=7 cellpadding=5 cellspacing=0 bgcolor="#00FFFF">
+<tr><td><b>13ths</b></td></tr>
+</table></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now let's proceed to the next fraction with an interesting decimal form, namely 1/13.
+<p><pre>
+	  1
+	----  = 0.<font color="#0000FF">076923</font><font color="#E1423E">076923</font><font color="#008000">076923</font>...
+	 13
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right away there are some big differences.  One is that all the missing multiples of 3 from the 1/7 case are now present here.  Another difference is that while the period for 7ths had 6 digits (7 - 1 = 6),
+one could have expected that 13ths would have a 12-digit period (13 - 1
+= 12); but it didn't turn out that way.  [As you will see later, it does
+indeed happen for other cases.]  As the song says, "<i>Qué será, será</i>".
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What about the split-half and split-thirds patterns, I hope you are beginning to ask.  You'll be pleased to know it still happens in the expected way:
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two halves:
+<p><pre>
+		<font color="#0000FF">076</font><font color="#E1423E">923</font>		<font color="#0000FF">076</font>  +  <font color="#E1423E">923</font>  =  999
+<p></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Three thirds:
+<pre><p>
+		<font color="#0000FF">07</font><font color="#E1423E">69</font><font color="#008000">23</font>		<font color="#0000FF">07</font>  +  <font color="#E1423E">69</font>  +  <font color="#008000">23</font>  =  99
+</pre><p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interestingly, thirteenths behave differently than the 7<sup>ths</sup> as regards the sequence of the next eleven fractions: 2/13, 3/13, 4/13, ..., 12/13.  The first difference occurs when we find the decimal form for 2/13.  Unlike the case of 2/7, this one produces a new set of six digits (rather than a rearrangement of the first period).
+<p><pre>
+	  2
+	----  = 0.<font color="#0000FF">153846</font><font color="#E1423E">153846</font><font color="#008000">153846</font>...
+	 13
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But, there is still some good news here anyway.  First, the split-half and split-thirds properties are retained.  (I'll let you
+write out the steps this time.)  And if we realize that we now have another six digits, this gives us 12 digits for our discussion; and the idea of 13 - 1 is encountered here afterall.  In fact, if we do a "head count" of the digits present in these two periods taken as a pair, we find that every digit appears, AND 3 and 6 appear <u>twice</u>!  Note that 3 + 6 = 9.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remember that seemingly useless oddity of the <font color="#0000FF">odd</font>-<font color="#E1423E">even</font> skip-
+counting that resulted in the sums of 8 and 19 for the 7ths period?  Well, guess what?  IT'S BACK!!  See?
+<pre><p>
+		<font color="#0000FF">0</font><font color="#E1423E">7</font><font color="#0000FF">6</font><font color="#E1423E">9</font><font color="#0000FF">2</font><font color="#E1423E">3</font>:		<font color="#0000FF">0</font> + <font color="#0000FF">6</font> + <font color="#0000FF">2</font> =  8
+				<font color="#E1423E">7</font> + <font color="#E1423E">9</font> + <font color="#E1423E">3</font> = 19
+
+
+		<font color="#0000FF">1</font><font color="#E1423E">5</font><font color="#0000FF">3</font><font color="#E1423E">8</font><font color="#0000FF">4</font><font color="#E1423E">6</font>:		<font color="#0000FF">1</font> + <font color="#0000FF">3</font> + <font color="#0000FF">4</font> =  8
+				<font color="#E1423E">5</font> + <font color="#E1423E">8</font> + <font color="#E1423E">6</font> = 19
+
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Perhaps now it would be fitting to observe that the sum of 8 and 19 is 27, the <b>triple</b> of 9.)
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you now "getting the hang of it"?  So, what about that thing called the "N-sequence"?  We need to do a little dividing first; but I'll let you do that this time.  It's not hard at all if you use
+a calculator.  We do have two periods this time, so you do have to be a little careful.  But in the end you should agree with what is given next.
+<pre><p>
+		    Period:  0   7  6   9  2  3
+		Numerators:  <font color="#0000FF">1</font>  <font color="#E1423E">10</font>  <font color="#0000FF">9</font>  <font color="#E1423E">12</font>  <font color="#0000FF">3</font>  <font color="#E1423E">4</font>
+
+
+		    Period:  1  5  3   8  4  6
+		Numerators:  <font color="#0000FF">2</font>  <font color="#E1423E">7</font>  <font color="#0000FF">5</font>  <font color="#E1423E">11</font>  <font color="#0000FF">6</font>  <font color="#E1423E">8</font>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doing the <font color="#0000FF">odd</font>-<font color="#E1423E">even</font> skip-count operation here produces these
+interesting sums:
+<pre>
+		<font color="#0000FF">1 + 9 + 3</font> = 13   and  <font color="#E1423E">10 + 12 + 4</font> = 26
+
+		<font color="#0000FF">2 + 5 + 6</font> = 13   and   <font color="#E1423E">7 + 11 + 8</font> = 26
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Do I need to direct your attention to the fact that 13 was our denominator this time, and 26 is the <b>double</b> of 13?)
+<p>
+
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+<center><table Border=7 cellpadding=5 cellspacing=0 bgcolor="#00FFFF">
+<tr><td><b>17ths</b></td></tr>
+</table></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We'll do one more fraction, 1/17, in this page.  Because after all this work, you should be getting the general idea.  And it would be good for you to try it out yourself on other larger fractions.
+<p><pre>
+          1
+	----  =  0.<font color="#0000FF">0588235294117647</font><font color="#FF0000">0588235294117647</font>...
+	 17
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ah, now there is a period worthy of the name PERIOD!  It has -- count 'em -- 16 digits!  And 16 is 17 - 1.  Here we have another case like 7ths, where the period length is one less than the denominator
+being used.  And also, like 7ths, we only have one period to concern us.  So now the periods for 2/17, 3/17, ..., 16/17 have the same digits, just starting at different positions.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If we "call the roll" of the digits present, the six digits we had in the 7ths period (1, 4, 2, 8, 5, 7) all answer <u>twice</u>, whereas the multiples of 3 (0, 3, 6, 9) each occur exactly <u>once</u>.  [Keep this sort of thing in mind as you later investigate larger periods.]
+<p>
+<hr width=50%>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While the period seems to be a mixed-up, mumble-jumble of digits in no particular order, there are structure and patterns here as well.  For instance our old friend, the split-half property again produces a
+sum consisting of sixteen 9's.  However, as 16 is not divisible by 3, the split-thirds property isn't applicable here.  But what about split-fourths?  Let's look at it.
+<pre><p>
+	<font color="#0000FF">0588</font><font color="#FF0000">2352</font><font color="#008000">9411</font><font color="#FF00FF">7647</font>	<font color="#0000FF">0588</font> + <font color="#FF0000">2352</font> + <font color="#008000">9411</font> + <font color="#FF00FF">7647</font> = 19998
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not quite all 9's there, but there are three and the digits at the beginning and end do add up to 9.  It's something anyway.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's move along to our other pattern structures, like the <font color="#0000FF">odd</font>-<font color="#FF0000">even</font> skip-count one.
+<p><pre>
+	<font color="#0000FF">0 8 2 5 9 1 7 4</font>   <--- sum is 36
+         <font color="#FF0000">5 8 3 2 4 1 6 7</font>  <--- sum is 36
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(And 36 is the quadruple of 9.)
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because we have 16 digits in our period, we might wonder what happens if we count every fourth digit before finding sums.  Here's
+what happens:
+<pre><p>
+	<font color="#0000FF">0   2   9   7</font>     <--- sum is 18
+	 <font color="#FF0000">5   3   4   6</font>    <--- sum is 18    (And 18 is the
+	  <font color="#008000">8   5   1   4</font>   <--- sum is 18     double of 9.)
+	   <font color="#FF00FF">8   2   1   7</font>  <--- sum is 18   
+<p></pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recalling the famous topic of Magic Squares and that a popular size is the the 4-by-4 square inspired me to wonder what would show up if I placed the digits of this period in a 4-by-4 array, then added up
+the rows, columns and diagonals.  I was pleasantly surprised, as I hope you will be, too.
+<pre>
+<center>
+<TABLE width=40% border=2 cellpadding=10>
+
+<TR>
+<TD BGCOLOR="FFF000" colspan=4><center><FONT COLOR="#FFFFFF">.</TD>
+<TD BGCOLOR="#000000"><center><FONT COLOR="#FFFFFF">24</font></center></TD>
+</TR>
+
+<TR bgcolor="#ffffff">
+<TD><font face="COMIC SANS MS" size=5><center>0</center></font></TD>
+<TD><font face="COMIC SANS MS" size=5><center>5</center></font></TD>
+<TD><font face="COMIC SANS MS" size=5><center>8</center></font></TD>
+<TD><font face="COMIC SANS MS" size=5><center>8</center></font></TD>
+<TD BGCOLOR="#000000"><center><FONT COLOR="#FFFFFF">21</FONT></center></TD>
+</TR>
+
+<TR bgcolor="#ffffff">
+<TD><font face="COMIC SANS MS" size=5><center>2</TD>
+<TD><font face="COMIC SANS MS" size=5><center>3</TD>
+<TD><font face="COMIC SANS MS" size=5><center>5</TD>
+<TD><font face="COMIC SANS MS" size=5><center>2</center></font></TD>
+<TD BGCOLOR="#000000"><center><FONT COLOR="#FFFFFF">12</TD>
+</TR>
+
+<TR bgcolor="#ffffff">
+<TD><font face="COMIC SANS MS" size=5><center>9</TD>
+<TD><font face="COMIC SANS MS" size=5><center>4</TD>
+<TD><font face="COMIC SANS MS" size=5><center>1</TD>
+<TD><font face="COMIC SANS MS" size=5><center>1</center></font></TD>
+<TD BGCOLOR="#000000"><center><FONT COLOR="#FFFFFF">15</COLOR></TD>
+</TR>
+
+<TR bgcolor="#ffffff">
+<TD><font face="COMIC SANS MS" size=5><center>7</TD>
+<TD><font face="COMIC SANS MS" size=5><center>6</TD>
+<TD><font face="COMIC SANS MS" size=5><center>4</TD>
+<TD><font face="COMIC SANS MS" size=5><center>7</center></font></TD>
+<TD BGCOLOR="#000000"><center><FONT COLOR="#FFFFFF">24</COLOR></TD>
+</TR>
+
+<TR BGCOLOR="#000000">
+<TD><center><FONT COLOR="#FFFFFF">18</TD>
+<TD><center><FONT COLOR="#FFFFFF">18</TD>
+<TD><center><FONT COLOR="#FFFFFF">18</TD>
+<TD><center><FONT COLOR="#FFFFFF">18</TD>
+<TD><center><FONT COLOR="#FFFFFF">11</font></center></TD>
+</TR>
+
+</TABLE>
+</center>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The four column totals of 18 are not unexpected as we just saw that in the previous comment.  But look at those row totals.  They seem to be nothing more than some multiples of 3.  But a closer examination
+will prove otherwise.
+<p><pre>
+	21 = 3 x 7	12 = 3 x 4	15 = 3 x 5	24 = 3 x 8
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the sequence of the 3's co-factors -- 7, 4, 5, 8 -- can be seen in the chart in the lower-left-to-upper-right diagonal, in that same order!
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The main 4-term diagonals don't seem to provide anything of interest, but the "1-3 broken diagonals" do.  Observe:
+<p><pre>
+		0 5 8 <font color="#FF00FF">8</font>	   8		0 <font color="#FF00FF">5</font> 8 8     5
+		<font color="#FF00FF">2</font> 3 5 2    2  		2 3 <font color="#FF00FF">5</font> 2     5
+		9 <font color="#FF00FF">4</font> 1 1	   4		9 4 1 <font color="#FF00FF">1</font>     1
+		7 6 <font color="#FF00FF">4</font> 7	  <u> 4</u>		<font color="#FF00FF">7</font> 6 4 7    <u> 7</u>
+			  18			   18
+
+
+		<font color="#FF00FF">0</font> 5 8 8	   0		0 5 <font color="#FF00FF">8</font> 8     8
+		2 3 5 <font color="#FF00FF">2</font>    2  		2 <font color="#FF00FF">3</font> 5 2     3
+		9 4 <font color="#FF00FF">1</font> 1	   1		<font color="#FF00FF">9</font> 4 1 1     9
+		7 <font color="#FF00FF">6</font> 4 7	  <u> 6</u>		7 6 4 <font color="#FF00FF">7</font>    <u> 7</u>
+			   9			   27
+
+
+<hr width=50%>
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, let's examine the N-sequence for our 16-digit period.
+<p><pre>
+	    Period: 0  5  8  8  2  3  5  2  9  4  1  1  7  6  4  7
+	Numerators: 1 10 15 14  4  6  9  5 16  7  2  3 13 11  8 12
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using the <font color="#0000FF">odd</font>-<font color="#FF0000">even</font> skip-count pattern brings these sums:
+<p><pre>
+	<font color="#0000FF">1    15     4     9    16     2    13     8</font>     <-- S = 68
+	  <font color="#FF0000">10    14     6     5     7     3    11    12</font>  <-- S = 68
+</pre><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guess what?  68 is the quadruple of 17.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The every-fourth term pattern provides this nice result:
+<p><pre>
+	<font color="#0000FF">1           4          16          13</font>           <-- S = 34
+	  <font color="#FF0000">10           6           7          11</font>        <-- S = 34
+	     <font color="#008000">15           9           2           8</font>     <-- S = 34
+	        <font color="#FF00FF">14           5           3          12</font>  <-- S = 34
+
+<p></pre>
+<center><img src="Colorbar.gif" width=350 height=3></center>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perhaps by now you are gaining a deeper appreciation for the beautiful numerical patterns that can be discovered in the decimal forms of some fractions.  And this is just a "drop in the bucket" of
+what is possible to find.  I hope you try investigating this topic for yourself.  I suggest you begin with the 19ths, then move on to the 21sts, 23rds, and 29ths, to mention but a few.  What you find depends mainly on your own creativity and sense of number.
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Good luck.
+<p>
+<hr noshade>
+</pre>
+
+<h3>Update (Feb 2002)</h3><br>
+
+<blockquote>
+			<font size="+1">
+				Check to see if a fraction becomes a 
+				<u>
+					terminating
+				</u>
+				 or 
+				<u>
+					repeating
+				</u>
+				 decimal:
+			</font>
+			<form name=denom>
+				<table   border="0" cellspacing="2" cellpadding="3">
+					<tr>
+						<td >
+							Enter your numerator:
+							<br>
+							<br>
+							Enter your denominator:
+						</td>
+						<td >
+							<input type="text" name="num" size="3"  value="">
+						
+							<hr>
+							<input type="text" name="den" size="3"  value="">
+						</td>
+						<td>
+							<b>
+								<i>
+									Terminating
+								</i>
+							</b>
+							 - the problem solves with a remainder of 0.
+							<br>
+							<b>
+								<i>
+									Repeating
+								</i>
+							</b>
+							 - the problem does not solve and the pattern of answers repeats.
+						</td>
+					</tr>
+				</table>
+				<hr>
+				<table  border="0" cellspacing="2" cellpadding="0">
+					<tr >
+						<td >
+							How many places would you 
+							<br>
+							like to extend the solution?
+						</td>
+						<td >
+							<input type="text" name="places" size="3"  value="">
+						</td>
+					</tr>
+				</table>
+<textarea name=worksp cols=40 rows=10 value="">
+</textarea>
+				<br>
+				<input type="button" size="5" onclick=doit() value="Solve">
+				&nbsp;
+				<INPUT TYPE="RESET" VALUE="Reset Form">
+			</form>
+			<font size="-1">
+				Remember - you can edit the text in this box to see if you can line up the
+				repeating patterns!
+				<br>
+				<div align="right">
+					Jeff LeMieux 7/2001
+				</div>
+			</font>
+		</blockquote>
+
+
+<p>
+<hr noshade>
+<p>
+
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>

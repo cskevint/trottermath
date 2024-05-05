@@ -1,0 +1,235 @@
+<HTML>
+<HEAD><TITLE>Egyptian Fractions Game</TITLE></HEAD>
+<a name="Top">
+<BODY bgcolor="CCCCCC">
+
+<TABLE WIDTH=100% Border=2>
+
+<TR>
+<TD WIDTH=20% align=center bgcolor="FF9900"><img src="egyp14f.gif"></TD>
+<TD WIDTH=60% bgcolor="FFFFFF"><CENTER><B><font face="arial" size=4>Egyptian Fractions<br>Target Game</font></B></CENTER></TD>
+<TD WIDTH=20% align=center bgcolor="000000"><font size=5 color="FFFFFF"><u><b>1</b></u><br>4</font></TD>
+</TR>
+
+</TABLE>
+<hr noshade>
+<pre>
+	Recently I had the opportunity to play around with a novel middle
+school level calculator that "does fractions".  [<i>For those who are curious,
+it is the Sharp EL-E300 model.</i>]  In fact, not only does it "do" them in
+the normal vertical format, but also it shows more than one fraction at
+a time in the display window.  "Neat-o torpedo", I thought.  "Now what
+could I do with this clever instrument that would capture the interest
+and attention of my students while at the same time teach them some good
+stuff about this time-honored bug-a-boo of math at this school level?"
+
+	After spending some time reflecting on the matter, I decided I
+wanted to create a game that would involve various concepts: addition of
+2 (or 3) common fractions, perhaps their subtraction as well, comparing
+relative sizes of 2 or more fractions, and decimal equivalents of
+fractions would be nice, too.  Since estimation and number sense are
+hot topics these days, I wanted to include them also.  And there was
+one more thing: how about a little historical connection thrown in for
+good measure!
+
+	The latter goal was easily met: <b>Egyptian Fractions</b>. (See my page
+on <a href="egyptmth.html">Egyptian Math</a> for more on this topic.)  From there, things just took
+a natural course, and I developed the little game that you will see
+described below.  By the way, that's an Egyptian fraction up there on
+the left side of the title bar; its modern form is given on the right.
+
+<center><img src="blakwave.gif" width=100 height=15></center>
+
+	Rather than presenting a lot of complicated rule descriptions of
+how to play, I think I'll just describe how two students might go about
+a sample game.  Our players are the ubiquitous John and Mary.
+
+	Play begins when their teacher announces that the "target fraction"
+will be "<b>7/19</b>".  The timer is set for 2 minutes.  At the word "<b>GO!</b>", John
+and Mary must each try to <font color="FF0000">find two Egyptian fractions whose sum is as
+close to 7/19 as possible, without exceeding it, before time runs out</font>.
+
+	If you recall your math history, you will know that John and
+Mary are looking for two fractions of the form
+<b>
+				1
+			       ---.
+			        x</b>
+
+Another name for such fractions is <b>unit fractions</b>, perhaps because the
+numerator is the unit "1".  However you choose to call them, the addition
+procedure for such a pair is really quite easy.  Observe:
+<b>
+		 1     1      b      a     b + a
+		--- + --- = ---- + ---- = -------
+		 a     b     ab     ab      ab
+</b>
+In other words, the sum of two unit fractions is equal to the <b>sum of the
+two denominators over the the product of the denominators</b>.  For more
+about all this, go to this WTM article: <a href="frakcase.html">Fraction Addition</a>.
+
+[Recall that in Egyptian fraction work, all denominators must be distinct
+values, no repeats.  So <b>a</b> is NOT equal to <b>b</b>.]
+
+<center><img src="blakwave.gif" width=100 height=15></center>
+
+	The two minutes are up.  Let's see how John and Mary are doing
+now.  John chose 3 and 30 as his denominators, whereas Mary chose 4 and
+11.  So their respective sums are these:
+<b>
+	 1      1     33     11             1      1     15      
+	--- + ---- = ---- = ----    and    --- + ---- = ----
+	 3     30     90     30             4     11     44
+</b>
+	The next step is to determine which sum is closer to the target
+fraction (7/19) without going over.  This can be done in two ways:
+fractionally or decimally.  If speed of play is more important to you,
+then the decimal approach is probably better; otherwise, doing it by
+fractions could provide a different view of the situation.  First, let's
+look at the decimal way.
+
+	We convert the 3 fractions (target and 2 sums) to their decimal
+forms by simple division in our calculators, obtaining
+
+	target:	7/19 =  <b>0.368421053</b>
+
+	John:  11/30 =  <b>0.366666667</b>
+
+	Mary:  15/44 =  <b>0.340909091</b>
+
+	It's clear that both players have obtained fractions whose values
+are less than the target's value.  It is considerably more helpful if we
+round our decimal expressions to some convenient level.  Here I would
+recommend "to the nearest 1000<sup>th</sup>", giving us these numbers.
+
+	target:	7/19 =  <b>0.368</b>
+
+	John:  11/30 =  <b>0.367</b>
+
+	Mary:  15/44 =  <b>0.341</b>
+
+	Mere inspection, or simple subtraction, allows us to declare a
+winner here: John.  His <i>error</i> was approximately "<b>0.001</b>" ("Very good,
+John.") while hers was approximately "<b>0.027</b>" ("Not bad at all, Mary.")
+"How about another game, kids?  Try 13/47 as your target fraction."
+
+<center><img src="blakwave.gif" width=100 height=15></center>
+
+	While they are busy on that, let's return to the first game and
+discuss it some more, particularly the other, fractional, way to compare
+the results.  This time we need to subtract the fraction sums from the
+target fraction.  That is not so difficult as you might believe if we
+use the formula that was presented in the page, <a href="frakcase.html">Fraction Addition</a>, or
+rather a minor alteration of what was given there, namely:
+<b><font color="#FF0000">
+			 a	 c	 ad - bc
+			---  -  ---  =  --------- 
+			 b	 d	   bd</font></b>
+
+Using this formula on our target and sums fractions, these results
+are produced:
+<b>
+	  7     11     210 - 209      1      
+	---- - ---- = ----------- = -----
+	 19     30        570        570 
+
+	  7     15     308 - 285      23      
+	---- - ---- = ----------- = -----
+	 19     44        836        836 
+</b>
+Again the results appear rather lopsided, even in fraction form, that
+1/570 is smaller than 23/836.  Checking it in general can be done in
+2 ways: fractional and decimally.  And again, decimally wins for ease
+of computation.  The 2 differences have these decimal values:
+
+	1/570 = 0.001754385964912 or about 0.002
+
+       23/836 = 0.02751196172249 or about 0.028
+
+[These figures agree, allowing for rounding of course, with what we
+found earlier.]
+
+	But to do it by fractions requires a bit more time; here's how
+I would proceed.  I like the "cross products" test.
+<font size=2 color="0000CC">
+                       836          13110</font>
+		  1         23
+		-----  <  -----
+		 570       836
+
+And since 836 is definitely less than 13,110, the left fraction is
+smaller than the right fraction.  [I leave it up to you to ferret out
+the why's and wherefore's.  :>) ]
+
+<center><img src="blakwave.gif" width=100 height=15></center>
+
+	Well, it's about time to check in on our game players and see
+who is the winner this time.  How'd you do, kids?
+
+	John says he used 4 and 50 as his denominators, while Mary chose
+5 and 14.  So the sums this time are
+<b>
+	 1      1      54      27             1      1     19      
+	--- + ---- = ----- = -----    and    --- + ---- = ----
+	 4     50     200     100             5     14     70
+</b>
+	Getting right down to the nitty-gritty (i.e. decimal comparison
+strategy), we have these figures:
+
+	target:	13/47 =  <b>0.276595745</b>
+
+	John:  27/100 =  <b>0.27</b>
+
+	Mary:   19/70 =  <b>0.271428571</b>
+
+	While John's sum produced a nice fraction with a terminating
+decimal form, and pretty close to the target fraction we might add, it's 
+easy to see that Mary's choice is just a little bit better.  (<i>Girls
+get the point here!</i>)
+
+<center><img src="blakwave.gif" width=100 height=15></center>
+<h3>Extensions & other comments</h3>
+	Throughout the whole discussion of this game use of the
+calculator has been assumed at all moments.  If one has access to a
+model which handles fractions, things are a bit more interesting.
+But such models are not required; the game can be played with even
+simple four-function types.  The players just have to "know" a bit
+more mathematics.  (And that's not a bad thing either, is it?)
+
+	The time element of the game is enhanced if one's calculator
+has a "replay" feature (as does the Sharp EL-E300 refferred to at the
+start of this page).  Changing the numbers to investigate a "better
+choice" is more effecient with such calculators.  And after one has
+gained a lot of experience there is  a "trick" that is useful to
+recognize to make one's search more efficient.  Namely, after all is
+said and done, the <b>error value</b> (and not the sum of the fractions) is
+the most important information to be obtained.  So one could combine
+and streamline the computation by using parentheses, or even not using
+them.  For John's work in the first game it would look like this:
+<b>
+		7/19  -  (1/3 + 1/30)</b>   or   <b>7/19 - 1/3 - 1/30</b>
+
+Now, by using the cursor keys and the replay feature, the denominators
+can be adjusted or changed rapidly, then the difference is more quickly
+computed, even in decimal form.
+
+	Finally, one way to make this game a bit more challenging would
+be to require three fractions to be added.  Now, things really start to
+get interesting.  
+
+<b>Postscript</b>
+
+	While playing around with the target fraction in the first game,
+I noted this:
+
+<center><b>1/5 + 1/6 + 1/570 = 7/19, exactly</b></center>
+
+<hr width=100%>
+</pre>
+<center><table border=2 cellpadding=10 bgcolor="cccccc">
+<tr>
+<td>Comments?<br> <A HREF="mailto:ttrotter@telesal.net">Send e-mail</a>.</td><td>Back to<br><a href="#Top">top</a></td><td>Go back to<br><a href="../index.html">Home Page</a></td><td>Go back to<br><a href="../contents.html">Contents</a></td>
+</tr>
+</table><center>
+</BODY>
+</HTML>
