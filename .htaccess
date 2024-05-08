@@ -3,3 +3,16 @@ RedirectMatch 404 /\.git
 RewriteEngine On
 RewriteCond %{HTTP_HOST}  !^www\.trottermath\.net$ [NC]
 RewriteRule ^(.*) https://www.trottermath.net/$1 [L,R]
+Redirect 302 /table-of-contents/ /contents.html
+Redirect 302 /polygonal-numbers/ /numthry/polynos.html
+Redirect 302 /repeating-decimal-patterns/ /numthry/repdecls.html
+Redirect 302 /perfect-numbers-et-al/ /numthry/perfnos.html
+Redirect 302 /wordpress/sexy-primes/ /numthry/sexyprim.html
+Redirect 302 /charlene-numbers/ /numthry/charlene.html
+Redirect 302 /sexy-primes/ /numthry/sexyprim.html
+Redirect 302 /niven-numbers/ /numthry/nivennos.html
+Redirect 302 /wordpress/ /index.html
+Redirect 302 /amicable-numbers/ /numthry/amicable.html
+Redirect 302 /sum-primes/ /numthry/psps.html
+Redirect 302 /amicable-numbers /numthry/amicable.html
+Redirect 302 /trotter-numbers-trotter-primes/ /numthry/trotprims1.html
